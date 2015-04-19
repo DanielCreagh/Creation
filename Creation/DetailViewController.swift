@@ -23,6 +23,7 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: AnyObject = self.detailItem {
+            self.title = detail.description
             if let label = self.detailDescriptionLabel {
                 label.text = detail.description
             }
@@ -40,6 +41,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBarHidden = false
+    }
 }
 
