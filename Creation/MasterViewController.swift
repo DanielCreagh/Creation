@@ -11,13 +11,12 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var menuItems: [String] = ["Projects", "Experience", "Qualifications & Education", "Contact"]
 
     override func awakeFromNib() {
         super.awakeFromNib()
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
             self.clearsSelectionOnViewWillAppear = false
-            self.preferredContentSize = CGSize(width: 320.0, height: 600.0)
+            self.preferredContentSize = CGSize(width: 320.0, height: 600.0  )
         }
     }
 
@@ -40,7 +39,7 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let screen = menuItems[indexPath.row] as String
+                let screen = MainMenuItem.allMenuItems[indexPath.row].rawValue
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = screen
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
@@ -55,13 +54,13 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuItems.count
+        return MainMenuItem.allMenuItems.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-        let screenName = menuItems[indexPath.row] as String
+        let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
         cell.textLabel!.text = screenName
         return cell
     }

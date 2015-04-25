@@ -9,5 +9,8 @@
 import Foundation
 
 class PersonalDetails {
-  
+  var firstName: String!
+  var surName: String!
+  var eMailAddress: String!
+  var telephoneNumber: String!
 }

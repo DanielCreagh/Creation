@@ -43,7 +43,8 @@ class DetailViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBarHidden = false
+      
+      var dataModel = DataModel.sharedInstance
+      println("++++ \(dataModel.details.eMailAddress)")
     }
 }
-
