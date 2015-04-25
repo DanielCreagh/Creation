@@ -22,8 +22,6 @@
 		F2B699CD1AEBABA400A102AF /* PersonalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699CB1AEBABA400A102AF /* PersonalDetails.swift */; };
 		F2B699D81AEBACF400A102AF /* Hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699D71AEBACF400A102AF /* Hobby.swift */; };
 		F2B699D91AEBACF400A102AF /* Hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699D71AEBACF400A102AF /* Hobby.swift */; };
-		F2B699DD1AEBAD3D00A102AF /* KeySkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699DA1AEBAD3D00A102AF /* KeySkills.swift */; };
-		F2B699DE1AEBAD3D00A102AF /* KeySkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699DA1AEBAD3D00A102AF /* KeySkills.swift */; };
 		F2B699DF1AEBAD3D00A102AF /* Qualification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699DB1AEBAD3D00A102AF /* Qualification.swift */; };
 		F2B699E01AEBAD3D00A102AF /* Qualification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699DB1AEBAD3D00A102AF /* Qualification.swift */; };
 		F2B699E11AEBAD3D00A102AF /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699DC1AEBAD3D00A102AF /* WorkExperience.swift */; };
@@ -34,6 +32,8 @@
 		F2B699EC1AEBB18A00A102AF /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699EA1AEBB18A00A102AF /* DataLoader.swift */; };
 		F2B699EE1AEBB19700A102AF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699ED1AEBB19700A102AF /* DataModel.swift */; };
 		F2B699EF1AEBB19700A102AF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699ED1AEBB19700A102AF /* DataModel.swift */; };
+		F2B699F11AEBE61400A102AF /* JsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699F01AEBE61400A102AF /* JsonKeys.swift */; };
+		F2B699F21AEBE61400A102AF /* JsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699F01AEBE61400A102AF /* JsonKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +62,12 @@
 		F29B6DAB1ADEE1E3005504AE /* CreationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationTests.swift; sourceTree = "<group>"; };
 		F2B699CB1AEBABA400A102AF /* PersonalDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalDetails.swift; path = Model/PersonalDetails.swift; sourceTree = "<group>"; };
 		F2B699D71AEBACF400A102AF /* Hobby.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hobby.swift; path = Model/Hobby.swift; sourceTree = "<group>"; };
-		F2B699DA1AEBAD3D00A102AF /* KeySkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeySkills.swift; path = Model/KeySkills.swift; sourceTree = "<group>"; };
 		F2B699DB1AEBAD3D00A102AF /* Qualification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Qualification.swift; path = Model/Qualification.swift; sourceTree = "<group>"; };
 		F2B699DC1AEBAD3D00A102AF /* WorkExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperience.swift; path = Model/WorkExperience.swift; sourceTree = "<group>"; };
 		F2B699E31AEBAD9000A102AF /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Project.swift; path = Model/Project.swift; sourceTree = "<group>"; };
 		F2B699EA1AEBB18A00A102AF /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Services/DataLoader.swift; sourceTree = "<group>"; };
 		F2B699ED1AEBB19700A102AF /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Model/DataModel.swift; sourceTree = "<group>"; };
+		F2B699F01AEBE61400A102AF /* JsonKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonKeys.swift; path = Services/JsonKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,6 @@
 			children = (
 				F2B699ED1AEBB19700A102AF /* DataModel.swift */,
 				F2B699CB1AEBABA400A102AF /* PersonalDetails.swift */,
-				F2B699DA1AEBAD3D00A102AF /* KeySkills.swift */,
 				F2B699DB1AEBAD3D00A102AF /* Qualification.swift */,
 				F2B699DC1AEBAD3D00A102AF /* WorkExperience.swift */,
 				F2B699D71AEBACF400A102AF /* Hobby.swift */,
@@ -176,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B699EA1AEBB18A00A102AF /* DataLoader.swift */,
+				F2B699F01AEBE61400A102AF /* JsonKeys.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -280,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B699DD1AEBAD3D00A102AF /* KeySkills.swift in Sources */,
 				F29B6D981ADEE1E3005504AE /* DetailViewController.swift in Sources */,
 				F29B6D961ADEE1E3005504AE /* MasterViewController.swift in Sources */,
 				F29B6D941ADEE1E3005504AE /* AppDelegate.swift in Sources */,
@@ -291,6 +290,7 @@
 				F2B699E11AEBAD3D00A102AF /* WorkExperience.swift in Sources */,
 				F2B699EB1AEBB18A00A102AF /* DataLoader.swift in Sources */,
 				F2B699DF1AEBAD3D00A102AF /* Qualification.swift in Sources */,
+				F2B699F11AEBE61400A102AF /* JsonKeys.swift in Sources */,
 				F2B699CC1AEBABA400A102AF /* PersonalDetails.swift in Sources */,
 				F2B699E41AEBAD9000A102AF /* Project.swift in Sources */,
 			);
@@ -306,11 +306,11 @@
 				F2B699E21AEBAD3D00A102AF /* WorkExperience.swift in Sources */,
 				F2B699E51AEBAD9000A102AF /* Project.swift in Sources */,
 				F24101021AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */,
-				F2B699DE1AEBAD3D00A102AF /* KeySkills.swift in Sources */,
 				F2B699D91AEBACF400A102AF /* Hobby.swift in Sources */,
 				F24100FF1AE41E4A004D0FD1 /* MainMenu.swift in Sources */,
 				F2B699CD1AEBABA400A102AF /* PersonalDetails.swift in Sources */,
 				F2B699E01AEBAD3D00A102AF /* Qualification.swift in Sources */,
+				F2B699F21AEBE61400A102AF /* JsonKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

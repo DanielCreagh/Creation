@@ -1,5 +1,5 @@
 //
-//  KeySkills.swift
+//  JsonKeys.swift
 //  Creation
 //
 //  Created by Daniel Creagh on 25/04/2015.
@@ -8,6 +8,4 @@
 
 import Foundation
 
-class KeySkills {
-  
-}
+let dateFormatter = "yyyy-MM-dd'T'HH:mm"

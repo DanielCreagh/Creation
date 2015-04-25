@@ -10,4 +10,10 @@ import Foundation
 
 class Qualification {
   
+  var name: String!
+  var webAddress: String!
+  var dateAchieved: NSDate!
+  var establishment: String!
+  var description: String!
+  var compentancies: [String]!
 }

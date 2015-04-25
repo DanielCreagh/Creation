@@ -10,4 +10,11 @@ import Foundation
 
 class WorkExperience {
   
+  var nameOfCompany: String!
+  var webSiteOfCompany: String!
+  var position: String!
+  var descriptionOfPosition: String!
+  var responsibilities: [String]!
+  var start: NSDate!
+  var end: NSDate!
 }

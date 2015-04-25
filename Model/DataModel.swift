@@ -16,9 +16,8 @@ class DataModel {
   }
   
   var details: PersonalDetails!
-  var keySkills: KeySkills!
-  var qualifications: [Qualification]!
+  var keySkills: [String]!
   var workExperience: [WorkExperience]!
+  var qualifications: [Qualification]!
   var hobbies: [Hobby]!
-  
 }

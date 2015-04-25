@@ -9,5 +9,7 @@
 import Foundation
 
 class Hobby {
-  
+
+  var name: String!
+  var description: String!
 }

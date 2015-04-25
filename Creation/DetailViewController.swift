@@ -45,6 +45,6 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
       
       var dataModel = DataModel.sharedInstance
-      println("++++ \(dataModel.details.eMailAddress)")
+      println(dataModel.workExperience[0].end)
     }
 }
