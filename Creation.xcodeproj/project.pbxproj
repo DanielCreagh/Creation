@@ -34,6 +34,12 @@
 		F2B699EF1AEBB19700A102AF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699ED1AEBB19700A102AF /* DataModel.swift */; };
 		F2B699F11AEBE61400A102AF /* JsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699F01AEBE61400A102AF /* JsonKeys.swift */; };
 		F2B699F21AEBE61400A102AF /* JsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699F01AEBE61400A102AF /* JsonKeys.swift */; };
+		F2E5CD011AFA9A0800E49203 /* GraphicsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */; };
+		F2E5CD021AFA9A0800E49203 /* GraphicsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */; };
+		F2E5CD031AFA9A0800E49203 /* WorkExperienceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CD001AFA9A0800E49203 /* WorkExperienceTable.swift */; };
+		F2E5CD041AFA9A0800E49203 /* WorkExperienceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CD001AFA9A0800E49203 /* WorkExperienceTable.swift */; };
+		F2E5CD081AFA9C1E00E49203 /* WorkExperienceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CD071AFA9C1E00E49203 /* WorkExperienceTableCell.swift */; };
+		F2E5CD091AFA9C1E00E49203 /* WorkExperienceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CD071AFA9C1E00E49203 /* WorkExperienceTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,9 @@
 		F2B699EA1AEBB18A00A102AF /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Services/DataLoader.swift; sourceTree = "<group>"; };
 		F2B699ED1AEBB19700A102AF /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Model/DataModel.swift; sourceTree = "<group>"; };
 		F2B699F01AEBE61400A102AF /* JsonKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonKeys.swift; path = Services/JsonKeys.swift; sourceTree = "<group>"; };
+		F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphicsConfig.swift; path = Presentation/GraphicsConfig.swift; sourceTree = "<group>"; };
+		F2E5CD001AFA9A0800E49203 /* WorkExperienceTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceTable.swift; path = Presentation/WorkExperienceTable.swift; sourceTree = "<group>"; };
+		F2E5CD071AFA9C1E00E49203 /* WorkExperienceTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceTableCell.swift; path = TableViews/TableViewCells/WorkExperienceTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,8 @@
 		F24100F91AE3D7C4004D0FD1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F2E5CD051AFA9B7900E49203 /* TableViews */,
+				F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */,
 				F29B6D951ADEE1E3005504AE /* MasterViewController.swift */,
 				F29B6D971ADEE1E3005504AE /* DetailViewController.swift */,
 				F29B6D991ADEE1E3005504AE /* Main.storyboard */,
@@ -178,6 +189,23 @@
 				F2B699F01AEBE61400A102AF /* JsonKeys.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		F2E5CD051AFA9B7900E49203 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				F2E5CD001AFA9A0800E49203 /* WorkExperienceTable.swift */,
+				F2E5CD061AFA9B8500E49203 /* TableViewCells */,
+			);
+			name = TableViews;
+			sourceTree = "<group>";
+		};
+		F2E5CD061AFA9B8500E49203 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F2E5CD071AFA9C1E00E49203 /* WorkExperienceTableCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +314,15 @@
 				F24100FE1AE41E4A004D0FD1 /* MainMenu.swift in Sources */,
 				F2B699D81AEBACF400A102AF /* Hobby.swift in Sources */,
 				F2B699EE1AEBB19700A102AF /* DataModel.swift in Sources */,
+				F2E5CD031AFA9A0800E49203 /* WorkExperienceTable.swift in Sources */,
 				F24101011AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */,
 				F2B699E11AEBAD3D00A102AF /* WorkExperience.swift in Sources */,
 				F2B699EB1AEBB18A00A102AF /* DataLoader.swift in Sources */,
 				F2B699DF1AEBAD3D00A102AF /* Qualification.swift in Sources */,
+				F2E5CD081AFA9C1E00E49203 /* WorkExperienceTableCell.swift in Sources */,
 				F2B699F11AEBE61400A102AF /* JsonKeys.swift in Sources */,
 				F2B699CC1AEBABA400A102AF /* PersonalDetails.swift in Sources */,
+				F2E5CD011AFA9A0800E49203 /* GraphicsConfig.swift in Sources */,
 				F2B699E41AEBAD9000A102AF /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,13 +333,16 @@
 			files = (
 				F2B699EC1AEBB18A00A102AF /* DataLoader.swift in Sources */,
 				F29B6DAC1ADEE1E3005504AE /* CreationTests.swift in Sources */,
+				F2E5CD021AFA9A0800E49203 /* GraphicsConfig.swift in Sources */,
 				F2B699EF1AEBB19700A102AF /* DataModel.swift in Sources */,
 				F2B699E21AEBAD3D00A102AF /* WorkExperience.swift in Sources */,
 				F2B699E51AEBAD9000A102AF /* Project.swift in Sources */,
 				F24101021AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */,
+				F2E5CD041AFA9A0800E49203 /* WorkExperienceTable.swift in Sources */,
 				F2B699D91AEBACF400A102AF /* Hobby.swift in Sources */,
 				F24100FF1AE41E4A004D0FD1 /* MainMenu.swift in Sources */,
 				F2B699CD1AEBABA400A102AF /* PersonalDetails.swift in Sources */,
+				F2E5CD091AFA9C1E00E49203 /* WorkExperienceTableCell.swift in Sources */,
 				F2B699E01AEBAD3D00A102AF /* Qualification.swift in Sources */,
 				F2B699F21AEBE61400A102AF /* JsonKeys.swift in Sources */,
 			);

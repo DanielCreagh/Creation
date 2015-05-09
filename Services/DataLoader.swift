@@ -50,7 +50,7 @@ func populateWithWorkExperience(model: DataModel) {
   "TDD",
   "Continuous Integration"]
   mAndS.start = makeDateObject("2012-09-01T12:00")
-//  apptivata.end = makeDateObject("2013-04-01T12:00")
+  mAndS.end = makeDateObject("2013-04-01T12:00")
   
   var apptivata = WorkExperience()
   apptivata.nameOfCompany = "Apptivata"

@@ -34,19 +34,14 @@ class MasterViewController: UITableViewController {
         navigationController?.navigationBarHidden = true
     }
     
-    // MARK: - Segues
+  // MARK: - Segues
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let screen = MainMenuItem.allMenuItems[indexPath.row].rawValue
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = screen
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        }
-    }
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+    let controller = (segue.destinationViewController as! UINavigationController).topViewController
+    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+    controller.navigationItem.leftItemsSupplementBackButton = true
+  }
 
     // MARK: - Table View
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -64,7 +59,17 @@ class MasterViewController: UITableViewController {
         cell.textLabel!.text = screenName
         return cell
     }
-    
+  
+//  override func tableView(tableView: UITableView, didSel
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+    if indexPath.row == find(MainMenuItem.allMenuItems, MainMenuItem.Experience) {
+      performSegueWithIdentifier(seg_SHOW_EXPERIENCE, sender: nil)
+      return
+    }
+    performSegueWithIdentifier(seg_DEFAULT, sender: nil)
+  }
+  
     // MARK: - Table View - Section Headers
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 90.0
