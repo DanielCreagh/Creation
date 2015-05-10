@@ -18,6 +18,8 @@ class MasterViewController: UITableViewController {
             self.clearsSelectionOnViewWillAppear = false
             self.preferredContentSize = CGSize(width: 320.0, height: 600.0  )
         }
+//      UINavigationBar.appearance().translucent = false
+//      UINavigationBar.appearance().barTintColor = col_BG_DARK_BLUE
     }
 
     override func viewDidLoad() {
@@ -31,7 +33,7 @@ class MasterViewController: UITableViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBarHidden = true
+        navigationController?.navigationBarHidden = false
     }
     
   // MARK: - Segues
@@ -52,13 +54,15 @@ class MasterViewController: UITableViewController {
         return MainMenuItem.allMenuItems.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+      let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-        let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
-        cell.textLabel!.text = screenName
-        return cell
-    }
+      let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
+      cell.textLabel!.text = screenName
+    
+    
+      return cell
+  }
   
 //  override func tableView(tableView: UITableView, didSel
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

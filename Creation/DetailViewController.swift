@@ -34,6 +34,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+      
+//      UINavigationBar.appearance().translucent = false
+//      UINavigationBar.appearance().barTintColor = col_BG_DARK_BLUE
     }
 
     override func didReceiveMemoryWarning() {

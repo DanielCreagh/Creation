@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
     splitViewController.delegate = self
-  
+    
+    navigationController.navigationBar.tintColor = col_BG_DARK_BLUE
+    UINavigationBar.appearance().tintColor = col_BG_DARK_BLUE
+    
     loadData()
     return true
   }
@@ -49,9 +52,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     // MARK: - Split view
 
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
+      UINavigationBar.appearance().tintColor = col_BG_DARK_BLUE
+
         if let secondaryAsNavController = secondaryViewController as? UINavigationController {
+          secondaryAsNavController.navigationBar.tintColor = col_BG_DARK_BLUE
+          UINavigationBar.appearance().tintColor = col_BG_DARK_BLUE
+
             if let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController {
+              secondaryAsNavController.navigationBar.tintColor = col_BG_DARK_BLUE
+              UINavigationBar.appearance().tintColor = col_BG_DARK_BLUE
+
                 if topAsDetailController.detailItem == nil {
+                  secondaryAsNavController.navigationBar.tintColor = col_BG_DARK_BLUE
+                  UINavigationBar.appearance().tintColor = col_BG_DARK_BLUE
+
+                  
                     // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
                     return true
                 }

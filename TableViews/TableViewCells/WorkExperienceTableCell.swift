@@ -26,6 +26,8 @@ class WorkExperienceTableCell: UITableViewCell {
     responsibilitiesLabel.text = experienceData.responsibilities.reduce("", combine: { $0! + $1 })
     datesLabel.text = experienceData.end.description
     
+    titleLabel.font = UIFont(name: "Questrial-Regular", size: 30)
+    
     backgroundColor = UIColor.clearColor()
   }
 }

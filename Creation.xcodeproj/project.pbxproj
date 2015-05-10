@@ -34,6 +34,10 @@
 		F2B699EF1AEBB19700A102AF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699ED1AEBB19700A102AF /* DataModel.swift */; };
 		F2B699F11AEBE61400A102AF /* JsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699F01AEBE61400A102AF /* JsonKeys.swift */; };
 		F2B699F21AEBE61400A102AF /* JsonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B699F01AEBE61400A102AF /* JsonKeys.swift */; };
+		F2C2661B1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2C2661A1AFE71FB00CD5D88 /* Questrial-Regular.otf */; };
+		F2C2661C1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2C2661A1AFE71FB00CD5D88 /* Questrial-Regular.otf */; };
+		F2C2661F1AFE735800CD5D88 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2661E1AFE735800CD5D88 /* Colours.swift */; };
+		F2C266201AFE735800CD5D88 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2661E1AFE735800CD5D88 /* Colours.swift */; };
 		F2E5CD011AFA9A0800E49203 /* GraphicsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */; };
 		F2E5CD021AFA9A0800E49203 /* GraphicsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */; };
 		F2E5CD031AFA9A0800E49203 /* WorkExperienceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5CD001AFA9A0800E49203 /* WorkExperienceTable.swift */; };
@@ -74,6 +78,8 @@
 		F2B699EA1AEBB18A00A102AF /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Services/DataLoader.swift; sourceTree = "<group>"; };
 		F2B699ED1AEBB19700A102AF /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Model/DataModel.swift; sourceTree = "<group>"; };
 		F2B699F01AEBE61400A102AF /* JsonKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonKeys.swift; path = Services/JsonKeys.swift; sourceTree = "<group>"; };
+		F2C2661A1AFE71FB00CD5D88 /* Questrial-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Questrial-Regular.otf"; sourceTree = "<group>"; };
+		F2C2661E1AFE735800CD5D88 /* Colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colours.swift; path = Presentation/Colours.swift; sourceTree = "<group>"; };
 		F2E5CCFF1AFA9A0800E49203 /* GraphicsConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphicsConfig.swift; path = Presentation/GraphicsConfig.swift; sourceTree = "<group>"; };
 		F2E5CD001AFA9A0800E49203 /* WorkExperienceTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceTable.swift; path = Presentation/WorkExperienceTable.swift; sourceTree = "<group>"; };
 		F2E5CD071AFA9C1E00E49203 /* WorkExperienceTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceTableCell.swift; path = TableViews/TableViewCells/WorkExperienceTableCell.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 		F29B6D851ADEE1E3005504AE = {
 			isa = PBXGroup;
 			children = (
+				F2C2661E1AFE735800CD5D88 /* Colours.swift */,
+				F2C2661D1AFE720000CD5D88 /* fonts */,
 				F2B699E61AEBB0CB00A102AF /* Services */,
 				F29B6D931ADEE1E3005504AE /* AppDelegate.swift */,
 				F29B6D911ADEE1E3005504AE /* Supporting Files */,
@@ -189,6 +197,14 @@
 				F2B699F01AEBE61400A102AF /* JsonKeys.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		F2C2661D1AFE720000CD5D88 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F2C2661A1AFE71FB00CD5D88 /* Questrial-Regular.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 		F2E5CD051AFA9B7900E49203 /* TableViews */ = {
@@ -257,6 +273,7 @@
 				TargetAttributes = {
 					F29B6D8D1ADEE1E3005504AE = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = E68QAAURD5;
 					};
 					F29B6DA41ADEE1E3005504AE = {
 						CreatedOnToolsVersion = 6.3;
@@ -289,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29B6D9B1ADEE1E3005504AE /* Main.storyboard in Resources */,
+				F2C2661B1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */,
 				F29B6DA01ADEE1E3005504AE /* LaunchScreen.xib in Resources */,
 				F29B6D9D1ADEE1E3005504AE /* Images.xcassets in Resources */,
 			);
@@ -298,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C2661C1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +332,7 @@
 				F29B6D941ADEE1E3005504AE /* AppDelegate.swift in Sources */,
 				F24100FE1AE41E4A004D0FD1 /* MainMenu.swift in Sources */,
 				F2B699D81AEBACF400A102AF /* Hobby.swift in Sources */,
+				F2C2661F1AFE735800CD5D88 /* Colours.swift in Sources */,
 				F2B699EE1AEBB19700A102AF /* DataModel.swift in Sources */,
 				F2E5CD031AFA9A0800E49203 /* WorkExperienceTable.swift in Sources */,
 				F24101011AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */,
@@ -332,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B699EC1AEBB18A00A102AF /* DataLoader.swift in Sources */,
+				F2C266201AFE735800CD5D88 /* Colours.swift in Sources */,
 				F29B6DAC1ADEE1E3005504AE /* CreationTests.swift in Sources */,
 				F2E5CD021AFA9A0800E49203 /* GraphicsConfig.swift in Sources */,
 				F2B699EF1AEBB19700A102AF /* DataModel.swift in Sources */,
@@ -467,9 +488,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Creation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -477,9 +501,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Creation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
