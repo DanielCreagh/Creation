@@ -11,7 +11,7 @@ import UIKit
 class WorkExperienceTableCell: UITableViewCell {
 
   @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var nameOfCompanyLabel: UILabel!
+  @IBOutlet weak var nameOfCompanyLabel: UIButton!
   @IBOutlet weak var descriptionLabel: UILabel!
   @IBOutlet weak var subHeadingLabel: UILabel!
   @IBOutlet weak var responsibilitiesLabel: UILabel!
@@ -20,14 +20,19 @@ class WorkExperienceTableCell: UITableViewCell {
   func populateCellWithWorkExperience(experienceData: WorkExperience) {
     
     titleLabel.text = experienceData.position
-    nameOfCompanyLabel.text = experienceData.nameOfCompany
+    nameOfCompanyLabel.setTitle(experienceData.nameOfCompany, forState: .Normal)
     descriptionLabel.text = experienceData.descriptionOfPosition
 
     responsibilitiesLabel.text = experienceData.responsibilities.reduce("", combine: { $0! + $1 })
     datesLabel.text = experienceData.end.description
     
-    titleLabel.font = UIFont(name: "Questrial-Regular", size: 30)
-    
     backgroundColor = UIColor.clearColor()
+  }
+  
+  @IBAction func tappedCompanyButton(sender: AnyObject) {
+    
+    var urlForCompany = (sender as! UIButton).titleLabel?.text
+    println("this is the company: \(urlForCompany)")
+    
   }
 }

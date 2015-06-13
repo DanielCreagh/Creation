@@ -10,17 +10,19 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
+  var detailViewController: DetailViewController? = nil
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-            self.clearsSelectionOnViewWillAppear = false
-            self.preferredContentSize = CGSize(width: 320.0, height: 600.0  )
-        }
-//      UINavigationBar.appearance().translucent = false
-//      UINavigationBar.appearance().barTintColor = col_BG_DARK_BLUE
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      self.clearsSelectionOnViewWillAppear = false
+      self.preferredContentSize = CGSize(width: 320.0, height: 600.0  )
     }
+    
+    tableView.backgroundColor = UIColor(patternImage: UIImage(named:MAIN_BACKGROUND_IMAGE)!)
+    title = ""
+  }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +42,13 @@ class MasterViewController: UITableViewController {
     
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
+//    (segue.destinationViewController as! DetailViewController).pageToLoad = "www.creagh.com"
+    
     let controller = (segue.destinationViewController as! UINavigationController).topViewController
     controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
     controller.navigationItem.leftItemsSupplementBackButton = true
+    (controller as! DetailViewController).pageToLoad = "HTML/contact.html"
+
   }
 
     // MARK: - Table View
@@ -55,16 +61,17 @@ class MasterViewController: UITableViewController {
     }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-      let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
-      cell.textLabel!.text = screenName
-    
-    
-      return cell
+    let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
+    cell.textLabel!.text = screenName
+    cell.backgroundColor = UIColor.clearColor()
+    println( " this is the width of the cel: \(cell.frame.width)")
+  
+    return cell
   }
   
-//  override func tableView(tableView: UITableView, didSel
+  //MARK: Table View Delegate Functions
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
     if indexPath.row == find(MainMenuItem.allMenuItems, MainMenuItem.Experience) {
@@ -76,10 +83,15 @@ class MasterViewController: UITableViewController {
   
     // MARK: - Table View - Section Headers
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 90.0
+        return 211.0
     }
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Creagh Creations"
-    }
+//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "Creagh Creations"
+//    }
+//  override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+  override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    
+    return  UIImageView(image: UIImage(named: "MainHeader"))
+  }
 }
 

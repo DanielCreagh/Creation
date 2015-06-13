@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20D3A431B133D30008098AB /* contact.html in Resources */ = {isa = PBXBuildFile; fileRef = F20D3A421B133D30008098AB /* contact.html */; };
+		F20D3A441B133D30008098AB /* contact.html in Resources */ = {isa = PBXBuildFile; fileRef = F20D3A421B133D30008098AB /* contact.html */; };
+		F20D3A471B134036008098AB /* images in Resources */ = {isa = PBXBuildFile; fileRef = F20D3A451B134036008098AB /* images */; };
+		F20D3A481B134036008098AB /* images in Resources */ = {isa = PBXBuildFile; fileRef = F20D3A451B134036008098AB /* images */; };
+		F20D3A491B134036008098AB /* styles in Resources */ = {isa = PBXBuildFile; fileRef = F20D3A461B134036008098AB /* styles */; };
+		F20D3A4A1B134036008098AB /* styles in Resources */ = {isa = PBXBuildFile; fileRef = F20D3A461B134036008098AB /* styles */; };
 		F24100FE1AE41E4A004D0FD1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24100FD1AE41E4A004D0FD1 /* MainMenu.swift */; };
 		F24100FF1AE41E4A004D0FD1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24100FD1AE41E4A004D0FD1 /* MainMenu.swift */; };
 		F24101011AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24101001AE4294C004D0FD1 /* StoryBoardKeys.swift */; };
@@ -57,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20D3A421B133D30008098AB /* contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = contact.html; path = HTML/contact.html; sourceTree = "<group>"; };
+		F20D3A451B134036008098AB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = HTML/images; sourceTree = "<group>"; };
+		F20D3A461B134036008098AB /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = styles; path = HTML/styles; sourceTree = "<group>"; };
 		F24100FD1AE41E4A004D0FD1 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenu.swift; path = ViewModel/MainMenu.swift; sourceTree = "<group>"; };
 		F24101001AE4294C004D0FD1 /* StoryBoardKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBoardKeys.swift; path = Presentation/StoryBoardKeys.swift; sourceTree = "<group>"; };
 		F29B6D8E1ADEE1E3005504AE /* Creation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Creation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +112,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F20D3A3E1B133CE3008098AB /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				F20D3A451B134036008098AB /* images */,
+				F20D3A461B134036008098AB /* styles */,
+				F20D3A421B133D30008098AB /* contact.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
 		F24100F91AE3D7C4004D0FD1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +161,7 @@
 		F29B6D851ADEE1E3005504AE = {
 			isa = PBXGroup;
 			children = (
+				F20D3A3E1B133CE3008098AB /* HTML */,
 				F2C2661E1AFE735800CD5D88 /* Colours.swift */,
 				F2C2661D1AFE720000CD5D88 /* fonts */,
 				F2B699E61AEBB0CB00A102AF /* Services */,
@@ -305,6 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20D3A471B134036008098AB /* images in Resources */,
+				F20D3A491B134036008098AB /* styles in Resources */,
+				F20D3A431B133D30008098AB /* contact.html in Resources */,
 				F29B6D9B1ADEE1E3005504AE /* Main.storyboard in Resources */,
 				F2C2661B1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */,
 				F29B6DA01ADEE1E3005504AE /* LaunchScreen.xib in Resources */,
@@ -316,7 +339,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20D3A481B134036008098AB /* images in Resources */,
 				F2C2661C1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */,
+				F20D3A4A1B134036008098AB /* styles in Resources */,
+				F20D3A441B133D30008098AB /* contact.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
