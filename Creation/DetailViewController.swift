@@ -46,7 +46,7 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
     self.configureView()
 
     let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
-    var req = NSURLRequest(URL:url!)
+    let req = NSURLRequest(URL:url!)
     self.webView!.loadRequest(req)
     
     
@@ -87,8 +87,8 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
       
-      var dataModel = DataModel.sharedInstance
-      println(dataModel.workExperience[0].end)
+      let dataModel = DataModel.sharedInstance
+      print(dataModel.workExperience[0].end)
     }
   
 //  //MARK: WebViewDelegate methods
@@ -106,9 +106,9 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
   override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
     
     if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-      println("landscape")
+      print("landscape")
     } else {
-      println("portraight")
+      print("portraight")
     }
   }
   

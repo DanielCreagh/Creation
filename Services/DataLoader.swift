@@ -9,7 +9,7 @@
 import Foundation
 
 func loadData() {
-  println("load data")
+  print("load data")
   
   let model = DataModel.sharedInstance
   
@@ -41,7 +41,7 @@ func populateWithKeySkills(model: DataModel) {
 
 func populateWithWorkExperience(model: DataModel) {
   
-  var mAndS = WorkExperience()
+  let mAndS = WorkExperience()
   mAndS.nameOfCompany = "Marks & Spencer Plc."
   mAndS.webSiteOfCompany = "https://www.marksandspencer.com/"
   mAndS.position = "Software Engineer"
@@ -52,7 +52,7 @@ func populateWithWorkExperience(model: DataModel) {
   mAndS.start = makeDateObject("2012-09-01T12:00")
   mAndS.end = makeDateObject("2013-04-01T12:00")
   
-  var apptivata = WorkExperience()
+  let apptivata = WorkExperience()
   apptivata.nameOfCompany = "Apptivata"
   apptivata.webSiteOfCompany = "http://www.apptivata.com"
   apptivata.position = "Producer & Mobile Developer"
@@ -66,7 +66,7 @@ func populateWithWorkExperience(model: DataModel) {
   apptivata.start = makeDateObject("2012-09-01T12:00")
   apptivata.end = makeDateObject("2013-04-01T12:00")
   
-  var matterOfForm = WorkExperience()
+  let matterOfForm = WorkExperience()
   matterOfForm.nameOfCompany = "Matter Of Form"
   matterOfForm.webSiteOfCompany = "http://matterofform.com/"
   matterOfForm.position = "iOS developer"
@@ -77,7 +77,7 @@ func populateWithWorkExperience(model: DataModel) {
   matterOfForm.start = makeDateObject("2013-04-01T12:00")
   matterOfForm.end = makeDateObject("2014-01-01T12:00")
   
-  var apptivation = WorkExperience()
+  let apptivation = WorkExperience()
   apptivation.nameOfCompany = "Apptivation"
   apptivation.webSiteOfCompany = "http://www.apptivation.co.uk/"
   apptivation.position = "iOS developer"
@@ -90,7 +90,7 @@ func populateWithWorkExperience(model: DataModel) {
   apptivation.start = makeDateObject("2014-01-01T12:00")
   apptivation.end = makeDateObject("2014-10-01T12:00")
   
-  var creations = WorkExperience()
+  let creations = WorkExperience()
   creations.nameOfCompany = "Creagh Creations"
   creations.webSiteOfCompany = "http://www.creagh.com/"
   creations.position = "Freelance Mobile App Development and Project Management"
@@ -104,7 +104,7 @@ func populateWithWorkExperience(model: DataModel) {
   creations.start = makeDateObject("2011-09-01T12:00")
   creations.end = makeDateObject("2014-01-01T12:00")
   
-  var iPlay = WorkExperience()
+  let iPlay = WorkExperience()
   iPlay.nameOfCompany = "I-play"
   iPlay.webSiteOfCompany = "http://www.iplay.com/"
   iPlay.position = "Producer"

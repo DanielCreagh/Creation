@@ -61,12 +61,12 @@ class MasterViewController: UITableViewController {
     }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
     let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
     cell.textLabel!.text = screenName
     cell.backgroundColor = UIColor.clearColor()
-    println( " this is the width of the cel: \(cell.frame.width)")
+    print( " this is the width of the cel: \(cell.frame.width)")
   
     return cell
   }
@@ -74,7 +74,7 @@ class MasterViewController: UITableViewController {
   //MARK: Table View Delegate Functions
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-    if indexPath.row == find(MainMenuItem.allMenuItems, MainMenuItem.Experience) {
+    if indexPath.row == MainMenuItem.allMenuItems.indexOf(MainMenuItem.Experience) {
       performSegueWithIdentifier(seg_SHOW_EXPERIENCE, sender: nil)
       return
     }

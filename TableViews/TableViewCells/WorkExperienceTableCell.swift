@@ -31,8 +31,8 @@ class WorkExperienceTableCell: UITableViewCell {
   
   @IBAction func tappedCompanyButton(sender: AnyObject) {
     
-    var urlForCompany = (sender as! UIButton).titleLabel?.text
-    println("this is the company: \(urlForCompany)")
+    let urlForCompany = (sender as! UIButton).titleLabel?.text
+    print("this is the company: \(urlForCompany)")
     
   }
 }
