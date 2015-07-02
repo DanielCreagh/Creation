@@ -1,24 +1,36 @@
-<div class="content">
+<div class="content" ng-show="vm.projectsNav=='Main'">
 	<div class="ProjectList wrapper">
 		<ul>
 			<li class="ProjectCategory">
-				<a href="./html5projects.html"><div class="ProjectCategoryImage html5projects"><img src="./images/thumbnails/projectcategories/thumbBackHTML5.png" alt="Flash Projects"/></div></a>
+				<a href="" ng-click="vm.projectsNav='HTML 5'"><div class="ProjectCategoryImage html5projects"><img src="./images/thumbnails/projectcategories/thumbBackHTML5.png" alt="Flash Projects"/></div></a>
 			</li>
 			<li class="ProjectCategory">
-				<a href="./iOSprojects.html">
+				<a href="" ng-click="vm.projectsNav='iOS'">
 					<div class="ProjectCategoryImage appleprojects"><img src="./images/thumbnails/projectcategories/thumbBack1Apple.png" alt="Flash Projects"/></div>							
 				</a>
 			</li>
 			<li class="ProjectCategory">
-				<a href="./Flashprojects.html">
+				<a href="" ng-click="vm.projectsNav='Flash'">
 					<div class="ProjectCategoryImage flashprojects"><img src="./images/thumbnails/projectcategories/thumbBackFlash.png" alt="Flash Projects"/></div>							
 				</a>
 			</li>
 			<li class="ProjectCategory">
-				<a href="./otherprojects.html">
+				<a href="" ng-click="vm.projectsNav='Other'">
 					<div class="ProjectCategoryImage otherprojects"><img src="./images/thumbnails/projectcategories/thumbBackOtherStuff.png" alt="Flash Projects"/></div>							
 				</a>
 			</li>
 		</ul>
 	</div>
+</div>
+
+<div ng-include="'includes/projects/flashProjects.html'" ng-show="vm.projectsNav=='Flash'">
+</div>
+
+<div ng-include="'includes/projects/iOSProjects.html'" ng-show="vm.projectsNav=='iOS'">
+</div>
+
+<div ng-include="'includes/projects/html5Projects.html'" ng-show="vm.projectsNav=='HTML 5'">
+</div>
+
+<div ng-include="'includes/projects/otherProjects.html'" ng-show="vm.projectsNav=='Other'">
 </div>

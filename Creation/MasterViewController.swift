@@ -29,7 +29,8 @@ class MasterViewController: UITableViewController {
 
         if let split = self.splitViewController {
             let controllers = split.viewControllers
-            self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
+            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+//            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
 
@@ -45,8 +46,8 @@ class MasterViewController: UITableViewController {
 //    (segue.destinationViewController as! DetailViewController).pageToLoad = "www.creagh.com"
     
     let controller = (segue.destinationViewController as! UINavigationController).topViewController
-    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-    controller.navigationItem.leftItemsSupplementBackButton = true
+    controller!.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+    controller!.navigationItem.leftItemsSupplementBackButton = true
     (controller as! DetailViewController).pageToLoad = "HTML/contact.html"
 
   }
