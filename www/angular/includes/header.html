@@ -4,9 +4,10 @@
 			<p><span class="caps">C</span>REAGH <span class="caps">C</span>REATIONS</p>
 			<div class="navigation headerbar">
 				<ul>
-					<li class="isFirst"><a href="" ng-click="vm.nav='Projects'" ng-hide="vm.nav=='Projects'">Projects</a></li>
-					<li class="isLast"><a href="" ng-click="vm.nav='Contact'" ng-hide="vm.nav=='Contact'">Contact</a></li>
-					<li class="isLast"><a href="" ng-click="vm.nav='About'" ng-hide="vm.nav=='About'">About</a></li>
+					<li class="isFirst"><a href="" ng-click="vm.nav='About'" ng-class="{isSelected: vm.nav=='About'}">About</a></li>				
+					<li><a href="" ng-click="vm.nav='Projects'" ng-class="{isSelected: vm.nav=='Projects'}">Projects</a></li>
+					<li class="isLast"><a href="" ng-click="vm.nav='Contact'" ng-class="{isSelected: vm.nav=='Contact'}">Contact</a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -29,7 +30,10 @@
 		</ul>
 			
 		<div id="location">
-			&nbsp;&nbsp;-&nbsp;&nbsp;{{vm.nav}}&nbsp;&nbsp;-&nbsp;&nbsp;
+			<div ng-hide="vm.nav=='Projects'">&nbsp;&nbsp;-&nbsp;&nbsp;{{vm.nav}}&nbsp;&nbsp;-&nbsp;&nbsp;</div>
+			<div ng-show="vm.nav=='Projects'">&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="" ng-click="vm.projectsNav='Main'">{{vm.nav}}</a>&nbsp;&nbsp;&nbsp;&nbsp;<span ng-hide="vm.projectsNav=='Main'">	|  &nbsp;&nbsp;&nbsp;&nbsp;{{vm.projectsNav}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			</div>
 		</div>
 	</div>			
 </div>

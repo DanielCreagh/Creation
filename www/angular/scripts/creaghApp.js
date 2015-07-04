@@ -3,4 +3,6 @@ angular.module('creationApp', [])
 		var vm = this;
 		vm.nav = "About";
 		vm.projectsNav = "Main";
+
+		vm.style = {color:'red'};
 	});
