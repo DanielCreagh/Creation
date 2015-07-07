@@ -5,7 +5,7 @@
 			<div class="navigation headerbar">
 				<ul>
 					<li class="isFirst"><a href="" ng-click="vm.nav='About'" ng-class="{isSelected: vm.nav=='About'}">About</a></li>				
-					<li><a href="" ng-click="vm.nav='Projects'" ng-class="{isSelected: vm.nav=='Projects'}">Projects</a></li>
+					<li><a href="" ng-click="vm.nav='Projects';vm.projectsNav='Main'" ng-class="{isSelected: vm.nav=='Projects'}">Projects</a></li>
 					<li class="isLast"><a href="" ng-click="vm.nav='Contact'" ng-class="{isSelected: vm.nav=='Contact'}">Contact</a></li>
 
 				</ul>
@@ -16,7 +16,7 @@
 	<div class="descriptionbar">				
 		<div class="wrapper">
 			<div class="description">
-				Mobile &amp; Web App Design &amp; Development
+				Native Mobile &amp; Web Apps Design &amp; Development
 			</div>
 		</div>
 	</div>
@@ -24,9 +24,9 @@
 <div class="navigation middle">
 	<div class="specialwrapper">
 		<ul>
-			<li class="isFirst"><a href="" ng-click="vm.nav='Projects'" ng-hide="vm.nav=='Projects'">Projects</a></li>
-			<li class="isLast"><a href="" ng-click="vm.nav='Contact'" ng-hide="vm.nav=='Contact'">Contact</a></li>
-			<li class="isLast"><a href="" ng-click="vm.nav='About'" ng-hide="vm.nav=='About'">About</a></li>
+			<li class="isFirst" ng-hide="vm.nav=='Projects'"><a href="" ng-click="vm.nav='Projects'" >Projects</a></li>
+			<li class="isLast" ng-hide="vm.nav=='Contact'"><a href="" ng-click="vm.nav='Contact'" >Contact</a></li>
+			<li class="isLast" ng-hide="vm.nav=='About'"><a href="" ng-click="vm.nav='About'" >About</a></li>
 		</ul>
 			
 		<div id="location">

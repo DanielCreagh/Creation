@@ -107,7 +107,6 @@ div.navigation.middle ul li a:hover,
 div.navigation.headerbar ul li a:hover,
 div.navigation.headerbar ul li.isFirst a:hover {
     background: #0a6d67; /* Old browsers */
-    background: -moz-linear-gradient(top,  #0a6d67 0%, #000000 100%, #207cca 100%, #7db9e8 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a6d67), color-stop(100%,#000000), color-stop(100%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* Opera 11.10+ */
@@ -115,6 +114,16 @@ div.navigation.headerbar ul li.isFirst a:hover {
     background: linear-gradient(top,  #0a6d67 0%,#000000 100%,#207cca 100%,#7db9e8 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a6d67', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }   
+
+div.navigation.middle ul li a, 
+div.navigation.headerbar ul li a,
+div.navigation.headerbar ul li.isFirst a {
+/*    -webkit-transition: all .3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;*/
+    /*transition: all 3s linear;*/
+}
 
 #location a{
     text-decoration: none;
@@ -180,7 +189,7 @@ div.copyrightnotice {
 
 @media screen and (min-width: 480px){
     .wrapper {
-        width: 93.75%; /* 1/16 */
+        width: 93.75%; /* 15/16 */
         margin-left: auto;
         margin-right: auto;
     }
@@ -280,7 +289,7 @@ div.copyrightnotice {
     }
 
     .specialwrapper {
-        width: 93.75%; /* 1/16 */
+        width: 93.75%; /* 15/16 */
         margin-left: auto;
         margin-right: auto;        
     }
@@ -293,6 +302,7 @@ div.copyrightnotice {
         overflow: visible;
     }    
     div.navigation.middle ul li {
+        float: right;
         width: 16.666667%; /* 1/6 */
         margin: 0.34em 0;
         text-align: center;
