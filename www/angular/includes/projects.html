@@ -1,22 +1,9 @@
 <div class="content" ng-show="vm.projectsNav=='Main'">
 	<div class="ProjectList wrapper">
-		<ul>
+		<ul ng-repeat="projectCategory in vm.projectcategories">
 			<li class="ProjectCategory">
-				<a href="" ng-click="vm.projectsNav='iOS'">
-					<div class="ProjectCategoryImage appleprojects"><img src="./images/thumbnails/projectcategories/thumbBack1Apple.png" alt="Flash Projects"/></div>							
-				</a>
-			</li>
-			<li class="ProjectCategory">
-				<a href="" ng-click="vm.projectsNav='HTML 5'"><div class="ProjectCategoryImage html5projects"><img src="./images/thumbnails/projectcategories/thumbBackHTML5.png" alt="Flash Projects"/></div></a>
-			</li>
-			<li class="ProjectCategory">
-				<a href="" ng-click="vm.projectsNav='Flash'">
-					<div class="ProjectCategoryImage flashprojects"><img src="./images/thumbnails/projectcategories/thumbBackFlash.png" alt="Flash Projects"/></div>							
-				</a>
-			</li>
-			<li class="ProjectCategory">
-				<a href="" ng-click="vm.projectsNav='Other'">
-					<div class="ProjectCategoryImage otherprojects"><img src="./images/thumbnails/projectcategories/thumbBackOtherStuff.png" alt="Flash Projects"/></div>							
+				<a href="" ng-click="vm.projectsNav=projectCategory.name">
+					<div class="ProjectCategoryImage" ng-style="{ 'background-image': 'url(' + projectCategory.rollOverImage + ')' }"><img ng-src={{projectCategory.mainImage}} alt={{projectCategory.description}}/></div>							
 				</a>
 			</li>
 		</ul>
