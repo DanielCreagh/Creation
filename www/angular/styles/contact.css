@@ -16,38 +16,18 @@ a.contactpanel {
 a.contactpanel .largesocialicon{
     width: 83.333333%;
     margin: 8.333333%;
-    border-radius: 15px;
+    border-radius: 35px;
     background-size: 100%;
     background-repeat: no-repeat;    
 }
 
 a.contactpanel .largesocialicon img{
-    border-radius: 15px;
+    border-radius: 35px;
     opacity: 1;
 }
 
 a.contactpanel:hover .largesocialicon img{
     opacity: 0;
-}
-
-a.contactpanel .largesocialicon.linkedin{
-    background-image: url( '../images/social/gq_LinkedInRollOverSmall.png' );
-}
-
-a.contactpanel .largesocialicon.twitter{
-    background-image: url( '../images/social/GQ_twitter-bird-RollOver.png' );
-}
-
-a.contactpanel .largesocialicon.email{
-    background-image: url( '../images/social/GQ_LargeEmail-copy.png' );
-}
-
-a.contactpanel .largesocialicon.facebook{
-    background-image: url( '../images/social/gq_LargeFacebookRollOver.png' );
-}
-
-a.contactpanel .largesocialicon.github{
-    background-image: url( '../images/social/GItHubContactPanelDistorted.png' );
 }
 
 a.contactpanel .largesocialicon.google img,
@@ -56,11 +36,6 @@ a.contactpanel .largesocialicon.facebook img,
 a.contactpanel .largesocialicon.facebook {
     border-radius: 35px;
 }
-
-a.contactpanel .largesocialicon.google{
-    background-image: url( '../images/social/gq_LargeGooglePlusRollOver.png' )
-}
-
 
 a.contactpanel:link .largesocialicon img,
 a.contactpanel:visited .largesocialicon img {
