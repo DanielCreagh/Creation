@@ -46,23 +46,6 @@ div.ProjectCategoryImage{
     background-repeat: no-repeat;    
 }
 
-div.ProjectCategoryImage.html5projects{
-    background-image: url( '../images/thumbnails/projectcategories/thumbOverlayHTML5.png' );
-}
-
-div.ProjectCategoryImage.appleprojects{
-    background-image: url( '../images/thumbnails/projectcategories/thumbOverlay1Apple.png' );  
-}
-
-
-div.ProjectCategoryImage.flashprojects{
-    background-image: url( '../images/thumbnails/projectcategories/thumbOverlayFlash.png' );  
-}
-
-div.ProjectCategoryImage.otherprojects{
-    background-image: url( '../images/thumbnails/projectcategories/thumbOverlayOtherStuff.png' );  
-}
-
 a.projectpanel{
     display: block;
     float: left;
@@ -91,87 +74,6 @@ a.projectpanel div.projectimage {
     background-size: 100%;
     background-repeat: no-repeat;     
 }
-
-/* -- Individual Project roll-overs -- */
-a.projectpanel div.projectimage.CEM {
-    background-image: url( '../images/thumbnails/HTML5/CuttingEdgeThumbnailRollOver.png' );
-}
-
-a.projectpanel div.projectimage.Tetrid {
-    background-image: url( '../images/thumbnails/HTML5/TetridThumbOverlay.png' );
-}
-
-a.projectpanel div.projectimage.YLS {
-    background-image: url( '../images/thumbnails/HTML5/thumbYLS.png' );
-}
-
-a.projectpanel div.projectimage.shnake {
-    background-image: url( '../images/thumbnails/HTML5/ShnakeThumbOverlay.png' );
-}
-
-a.projectpanel div.projectimage.NOG {
-    background-image: url( '../images/thumbnails/ios/72namesofgodThumboverlay.png' );
-}
-
-a.projectpanel div.projectimage.ninja {
-    background-image: url( '../images/thumbnails/ios/ninja_stickerRollOver.png' );
-}
-
-a.projectpanel div.projectimage.flake {
-    background-image: url( '../images/thumbnails/flash/FlakeOverlay.png' );
-}
-
-a.projectpanel div.projectimage.thissite {
-    background-image: url( '../images/thumbnails/HTML5/thisSiteRollOver.png' );
-}
-
-a.projectpanel div.projectimage.clear {
-    background-image: url( '../images/thumbnails/flash/ClearBarOverlay.png' );
-}
-
-a.projectpanel div.projectimage.buzzing {
-    background-image: url( '../images/thumbnails/otherprojects/BuzzingThumbOverlay.png' );
-}
-
-a.projectpanel div.projectimage.kaji {
-    background-image: url( '../images/thumbnails/otherprojects/KajiThumbOverlay.png' );
-}
-
-a.projectpanel div.projectimage.misanthropia {
-    background-image: url( '../images/thumbnails/otherprojects/MusicThumbOverlay.png' );
-}
-
-a.projectpanel div.projectimage.BT2 {
-    background-image: url( '../images/thumbnails/ios/BT2Overlay.png' );
-}
-
-a.projectpanel div.projectimage.eGamebook {
-    background-image: url( '../images/thumbnails/ios/eGameBookOverlay.jpg' );
-}
-
-a.projectpanel div.projectimage.NHS {
-    background-image: url( '../images/thumbnails/ios/NHS.jpg' );
-}
-
-a.projectpanel div.projectimage.lloydsIpad {
-    background-image: url( '../images/thumbnails/ios/lloydsTabletPersonalOverlay.png' );
-}
-a.projectpanel div.projectimage.HalifaxIpad {
-    background-image: url( '../images/thumbnails/ios/HalTabletPersonalOverlay.png' );
-}
-a.projectpanel div.projectimage.bosIpad {
-    background-image: url( '../images/thumbnails/ios/BoSTabletPersonalOverlay.png' );
-}
-a.projectpanel div.projectimage.lloyds {
-    background-image: url( '../images/thumbnails/ios/lloydsPersonalOverlay.png' );
-}
-a.projectpanel div.projectimage.halifax {
-    background-image: url( '../images/thumbnails/ios/HalPersonalOverlay.png' );
-}
-a.projectpanel div.projectimage.bos {
-    background-image: url( '../images/thumbnails/ios/BoSPersonalOverlay.png' );
-}
-
 a.projectpanel img{
     opacity: 1;
 }

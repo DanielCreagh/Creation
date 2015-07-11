@@ -1,26 +1,40 @@
 [
   { 
-    "name": "iOS",
-    "mainImage": "../images/thumbnails/projectcategories/thumbBack1Apple.png",
-    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlay1Apple.png",
-    "description": "Apple iOS Project Category"
+    "name": "Burst Crew @ Clear Bar",
+    "mainImage": "../images/thumbnails/flash/flashThumbplaceholder.png",
+    "rollOverImage": "../images/thumbnails/flash/ClearBarOverlay.png",
+    "description": "Burst Crew at Clear Bar Newcastle",
+    "link": "http://creagh.com/projects/flash/ClearBar/ClearBarAnimation.html",
+    "details": [ 
+      "Photography from live event",
+      "Music composition",
+      "Very early personal project"
+    ]
   },
   { 
-    "name": "HTML 5",
-    "mainImage": "../images/thumbnails/projectcategories/thumbBackHTML5.png",
-    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlayHTML5.png",
-    "description": "HTML5 Project Category"
-  },
+    "name": "Flake",
+    "mainImage": "../images/thumbnails/flash/FlakeThumb01.jpg",
+    "rollOverImage": "../images/thumbnails/flash/FlakeOverlay.png",
+    "description": "Flake (Fl -ash, sn-ake)",
+    "link": "http://creagh.com/projects/flash/Flake/flake.html",
+    "details": [ 
+      "Adobe Flash",
+      "Action Script 3",
+      "Personal project/experiment"
+    ]
+  },  
   { 
-    "name": "Flash",
-    "mainImage": "../images/thumbnails/projectcategories/thumbBackFlash.png",
-    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlayFlash.png",
-    "description": "Adobe Flash Project Category"
-  },
-  { 
-    "name": "Other",
-    "mainImage": "../images/thumbnails/projectcategories/thumbBackOtherStuff.png",
-    "rollOverImage": "../images/thumbnails/projectcategories/thumbOverlayOtherStuff.png",
-    "description": "Other Projects Category"
+    "name": "Ninja",
+    "mainImage": "../images/thumbnails/ios/ninja_sticker.png",
+    "rollOverImage": "../images/thumbnails/ios/ninja_stickerRollOver.png",
+    "description": "Ninja: Work in Progress",
+    "link": "#",
+    "details": [ 
+      "Prototype",
+      "Innovative video game mechanic",
+      "Flash & iOS",
+      "Photoshop"
+    ]
   }
 ]
+
