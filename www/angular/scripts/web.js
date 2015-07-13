@@ -3,10 +3,10 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/dist/index.html');
+    res.sendFile(__dirname + '/www/angular/index.html');
 });
 
-app.use(express.static(__dirname + '/dist'))
+app.use(express.static(__dirname + '/www/angular'))
 
 
 var current_env = "";
