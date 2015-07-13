@@ -34,5 +34,11 @@
     "mainImage": "../images/social/GItHubContactPanelNormal.png",
     "rollOverImage": "../images/social/GItHubContactPanelDistorted.png",
     "link": "https://github.com/DanielCreagh"
+  },
+  { 
+    "name": "Stack Overflow",
+    "mainImage": "../images/social/SO_large.png",
+    "rollOverImage": "../images/social/SO_large_rollOver.png",
+    "link": "http://stackoverflow.com/users/2319825/daniel-creagh"
   }
 ]
