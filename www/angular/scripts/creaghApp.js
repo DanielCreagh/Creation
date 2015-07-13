@@ -1,8 +1,11 @@
-angular.module('creationApp', [])
-.controller('creaghController', function($scope, $http) {
+angular.module('creationApp', ['dataService'])
+.controller('creaghController', function($scope, dataService, $http) {
 		var vm = this;
 		vm.nav = "About";
 		vm.projectsNav = "Main";
+
+    dataService.sayHello();
+    dataService.getContactsData();
 
 		$http.get('data/projectCategories.JSON').
       success(function(data, status, headers, config) {
