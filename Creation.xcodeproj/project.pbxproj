@@ -17,6 +17,7 @@
 		F24100FF1AE41E4A004D0FD1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24100FD1AE41E4A004D0FD1 /* MainMenu.swift */; };
 		F24101011AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24101001AE4294C004D0FD1 /* StoryBoardKeys.swift */; };
 		F24101021AE4294C004D0FD1 /* StoryBoardKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24101001AE4294C004D0FD1 /* StoryBoardKeys.swift */; };
+		F24777091B5AE40C003B8E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29B6D991ADEE1E3005504AE /* Main.storyboard */; };
 		F29B6D941ADEE1E3005504AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B6D931ADEE1E3005504AE /* AppDelegate.swift */; };
 		F29B6D961ADEE1E3005504AE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B6D951ADEE1E3005504AE /* MasterViewController.swift */; };
 		F29B6D981ADEE1E3005504AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B6D971ADEE1E3005504AE /* DetailViewController.swift */; };
@@ -289,7 +290,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Daniel Creagh";
 				TargetAttributes = {
 					F29B6D8D1ADEE1E3005504AE = {
@@ -341,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20D3A481B134036008098AB /* images in Resources */,
+				F24777091B5AE40C003B8E3C /* Main.storyboard in Resources */,
 				F2C2661C1AFE71FB00CD5D88 /* Questrial-Regular.otf in Resources */,
 				F20D3A4A1B134036008098AB /* styles in Resources */,
 				F20D3A441B133D30008098AB /* contact.html in Resources */,
@@ -449,6 +451,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -519,6 +522,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Creation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CreaghCreations.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -532,6 +536,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Creation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CreaghCreations.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -551,6 +556,7 @@
 				);
 				INFOPLIST_FILE = CreationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CreaghCreations.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Creation.app/Creation";
 			};
@@ -566,6 +572,7 @@
 				);
 				INFOPLIST_FILE = CreationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CreaghCreations.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Creation.app/Creation";
 			};

@@ -48,7 +48,7 @@ class MasterViewController: UITableViewController {
     let controller = (segue.destinationViewController as! UINavigationController).topViewController
     controller!.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
     controller!.navigationItem.leftItemsSupplementBackButton = true
-    (controller as! DetailViewController).pageToLoad = "HTML/contact.html"
+//    (controller as! DetailViewController).pageToLoad = "HTML/contact.html"
 
   }
 
@@ -67,7 +67,7 @@ class MasterViewController: UITableViewController {
     let screenName = MainMenuItem.allMenuItems[indexPath.row].rawValue
     cell.textLabel!.text = screenName
     cell.backgroundColor = UIColor.clearColor()
-    print( " this is the width of the cel: \(cell.frame.width)")
+//    print( " this is the width of the cel: \(cell.frame.width)")
   
     return cell
   }

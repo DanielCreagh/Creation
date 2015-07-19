@@ -20,48 +20,53 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
-            self.configureView()
+//            self.configureView()
         }
     }
 
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            self.title = detail.description
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
-    }
+//  func configureView() {
+//        if let detail: AnyObject = self.detailItem {
+//            self.title = detail.description
+//            if let label = self.detailDescriptionLabel {
+//                label.text = detail.description
+//            }
+//        }
+//    }
 
   override func loadView() {
-    self.webView = WKWebView()
-    self.view = self.webView
-    self.webView.navigationDelegate = self
+
   }
   
   override func viewDidLoad() {
+    
+//    self.webView = WKWebView()
+//    self.view = self.webView
+//    self.webView.navigationDelegate = self
+//    self.webView.backgroundColor = UIColor.greenColor()
+
+    
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    self.configureView()
+//    self.configureView()
 
-    let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
-    let req = NSURLRequest(URL:url!)
-    self.webView!.loadRequest(req)
+//    let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
+//    let req = NSURLRequest(URL:url!)
+//    self.webView!.loadRequest(req)
     
     
 //    webView.delegate = self
 //    webView.sizeThatFits(CGSizeZero)
 //    
-////    [[NSBundle mainBundle] URLForResource:@"my" withExtension:@"html"];
-//    let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
-    webView.loadRequest(NSURLRequest(URL: NSURL(string: pageToLoad)!))
-////    webView.loadRequest(NSURLRequest(URL: url!))
-//    
+//    [[NSBundle mainBundle] URLForResource:@"my" withExtension:@"html"];
+//    let url = NSBundle.URLsForResourcesWithExtension("html", subdirectory: <#T##String?#>, inBundleWithURL: <#T##NSURL#>)
+    let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
+//    webView.loadRequest(NSURLRequest(URL: NSURL(string: pageToLoad)!))
+    webView.loadRequest(NSURLRequest(URL: url!))
+//
 //    println(NSURL(string: pageToLoad))
 //    
-////      UINavigationBar.appearance().translucent = false
-////      UINavigationBar.appearance().barTintColor = col_BG_DARK_BLUE
+//      UINavigationBar.appearance().translucent = false
+//      UINavigationBar.appearance().barTintColor = col_BG_DARK_BLUE
   }
 
   override func viewDidAppear(animated: Bool) {
@@ -87,8 +92,8 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
       
-      let dataModel = DataModel.sharedInstance
-      print(dataModel.workExperience[0].end)
+//      let dataModel = DataModel.sharedInstance
+//      print(dataModel.workExperience[0].end, appendNewline: false)
     }
   
 //  //MARK: WebViewDelegate methods
@@ -106,36 +111,36 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
   override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
     
     if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-      print("landscape")
+      print("landscape", appendNewline: false)
     } else {
-      print("portraight")
+      print("portraight", appendNewline: false)
     }
   }
   
   override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
     
 //    webView.sizeToFit()
-    webView.reload()
+//    webView.reload()
     
-    let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
-    webView.loadRequest(NSURLRequest(URL: url!))
+//    let url = NSBundle.mainBundle().URLForResource("contact", withExtension: "html")
+//    webView.loadRequest(NSURLRequest(URL: url!))
 //    webView.sizeToFit()
     
   }
   func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
 
     
-    if let frame = navigationAction.targetFrame {
-
-    } else {
-      decisionHandler(.Cancel)
-      
-      UIApplication.sharedApplication().openURL(navigationAction.request.URL!)
-      
-      return
-    }
-    
-    decisionHandler(.Allow)
+//    if let frame = navigationAction.targetFrame {
+//
+//    } else {
+//      decisionHandler(.Cancel)
+//      
+//      UIApplication.sharedApplication().openURL(navigationAction.request.URL!)
+//      
+//      return
+//    }
+//    
+//    decisionHandler(.Allow)
   }
 }
 

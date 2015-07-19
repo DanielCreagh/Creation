@@ -9,7 +9,7 @@
 import Foundation
 
 func loadData() {
-  print("load data")
+  print("load data", appendNewline: false)
   
   let model = DataModel.sharedInstance
   
