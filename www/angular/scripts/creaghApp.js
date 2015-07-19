@@ -4,18 +4,7 @@ angular.module('creationApp', ['dataService'])
 		vm.nav = "About";
 		vm.projectsNav = "Main";
 
-    dataService.sayHello();
-    dataService.getContactsData();
-
-		$http.get('data/projectCategories.JSON').
-      success(function(data, status, headers, config) {
-        vm.projectcategories = data;
-      }).
-      error(function(data, status, headers, config) {
-        console.log(data);
-      });
-
-    $http.get('data/contactsData.JSON').
+    dataService.getContactsData().
       success(function(data, status, headers, config) {
         vm.contactsData = data;
       }).
@@ -23,7 +12,15 @@ angular.module('creationApp', ['dataService'])
         console.log(data);
       });
 
-    $http.get('data/flashProjectsData.JSON').
+    dataService.getprojectCategoriesData().
+      success(function(data, status, headers, config) {
+        vm.projectcategories = data;
+      }).
+      error(function(data, status, headers, config) {
+        console.log(data);
+      });
+
+    dataService.getFlashProjectsData().
       success(function(data, status, headers, config) {
         vm.flashProjectsData = data;
       }).
@@ -31,7 +28,7 @@ angular.module('creationApp', ['dataService'])
         console.log(data);
       });
 
-    $http.get('data/html5ProjectsData.JSON').
+    dataService.getHtml5ProjectsData().
       success(function(data, status, headers, config) {
         vm.html5ProjectsData = data;
       }).
@@ -39,7 +36,7 @@ angular.module('creationApp', ['dataService'])
         console.log(data);
       });
 
-    $http.get('data/iOSProjectsData.JSON').
+    dataService.getIOSProjectsData().
       success(function(data, status, headers, config) {
         vm.iOSProjectsData = data;
       }).
@@ -47,7 +44,7 @@ angular.module('creationApp', ['dataService'])
         console.log(data);
       });
 
-    $http.get('data/otherProjectsData.JSON').
+    dataService.getOtherProjectsData().
       success(function(data, status, headers, config) {
         vm.otherProjectsData = data;
       }).
