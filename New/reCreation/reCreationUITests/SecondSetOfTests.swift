@@ -1,15 +1,14 @@
 //
-//  reCreationUITests.swift
-//  reCreationUITests
+//  SecondSetOfTests.swift
+//  reCreation
 //
-//  Created by Daniel Creagh on 18/07/2015.
+//  Created by Daniel Creagh on 24/07/2015.
 //  Copyright © 2015 Creagh Creations. All rights reserved.
 //
 
-import Foundation
 import XCTest
 
-class reCreationUITests: XCTestCase {
+class SecondSetOfTests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -29,13 +28,29 @@ class reCreationUITests: XCTestCase {
     
     func testExample() {
       
-      
-      let app = XCUIApplication()
-      app.tables.staticTexts["Projects"].tap()
-      app.navigationBars.matchingIdentifier("Detail").buttons["Master"].tap()
+      XCUIApplication().tables.staticTexts["Qualifications and Education"].tap()
       
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+  
+  
+  func testExampleTwo() {
     
+    let app = XCUIApplication()
+    let tablesQuery = app.tables
+    tablesQuery.staticTexts["Projects"].tap()
+    
+    let masterButton = app.navigationBars.matchingIdentifier("Detail").buttons["Master"]
+    masterButton.tap()
+    tablesQuery.cells.staticTexts["Qualifications and Education"].tap()
+    masterButton.tap()
+    tablesQuery.staticTexts["Contact"].tap()
+    masterButton.tap()
+    tablesQuery.staticTexts["Personal"].tap()
+    app.staticTexts["Projects"].tap()
+    app.staticTexts["About"].tap()
+    masterButton.tap()
+    
+  }
 }

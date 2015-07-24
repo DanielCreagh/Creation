@@ -21,6 +21,7 @@
 		F24777871B5AFAAD003B8E3C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24777861B5AFAAD003B8E3C /* MainMenu.swift */; };
 		F24777881B5AFAAD003B8E3C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24777861B5AFAAD003B8E3C /* MainMenu.swift */; };
 		F24777891B5AFAAD003B8E3C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24777861B5AFAAD003B8E3C /* MainMenu.swift */; };
+		F2FC34311B623E0200399EEE /* SecondSetOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC34301B623E0200399EEE /* SecondSetOfTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F24777771B5AF9EF003B8E3C /* reCreationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reCreationUITests.swift; sourceTree = "<group>"; };
 		F24777791B5AF9EF003B8E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24777861B5AFAAD003B8E3C /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenu.swift; path = ViewModel/MainMenu.swift; sourceTree = "<group>"; };
+		F2FC34301B623E0200399EEE /* SecondSetOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSetOfTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				F24777771B5AF9EF003B8E3C /* reCreationUITests.swift */,
 				F24777791B5AF9EF003B8E3C /* Info.plist */,
+				F2FC34301B623E0200399EEE /* SecondSetOfTests.swift */,
 			);
 			path = reCreationUITests;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24777781B5AF9EF003B8E3C /* reCreationUITests.swift in Sources */,
+				F2FC34311B623E0200399EEE /* SecondSetOfTests.swift in Sources */,
 				F24777891B5AFAAD003B8E3C /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
