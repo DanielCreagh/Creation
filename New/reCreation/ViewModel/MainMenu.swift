@@ -3,7 +3,7 @@ import Foundation
 enum MainMenuItem: String {
   case Projects   = "Projects"
   case Experience = "Work Experience"
-  case Education  = "Qualifications and Education"
+  case Education  = "Academic"
   case Contact    = "Contact"
   case Personal   = "Personal"
   static let initialMenu = Projects

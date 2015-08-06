@@ -16,8 +16,8 @@ class MasterViewController: UITableViewController {
     super.viewDidLoad()
 
     if let split = self.splitViewController {
-        let controllers = split.viewControllers
-        self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+      let controllers = split.viewControllers
+      self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
     }
   }
 
@@ -30,13 +30,13 @@ class MasterViewController: UITableViewController {
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "showDetail" {
-        if let indexPath = self.tableView.indexPathForSelectedRow {
-          let menuItemSelected = MainMenuItem.allMenuItems[indexPath.row]
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-            controller.detailItem = menuItemSelected
-            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-            controller.navigationItem.leftItemsSupplementBackButton = true
-        }
+      if let indexPath = self.tableView.indexPathForSelectedRow {
+        let menuItemSelected = MainMenuItem.allMenuItems[indexPath.row]
+          let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+          controller.detailItem = menuItemSelected
+          controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+          controller.navigationItem.leftItemsSupplementBackButton = true
+      }
     }
   }
 

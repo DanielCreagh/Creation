@@ -21,6 +21,9 @@
 		F24777871B5AFAAD003B8E3C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24777861B5AFAAD003B8E3C /* MainMenu.swift */; };
 		F24777881B5AFAAD003B8E3C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24777861B5AFAAD003B8E3C /* MainMenu.swift */; };
 		F24777891B5AFAAD003B8E3C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24777861B5AFAAD003B8E3C /* MainMenu.swift */; };
+		F24E5EF21B73FFBF00EFC1C3 /* StoryBoardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E5EF11B73FFBF00EFC1C3 /* StoryBoardConstants.swift */; };
+		F24E5EF31B73FFBF00EFC1C3 /* StoryBoardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E5EF11B73FFBF00EFC1C3 /* StoryBoardConstants.swift */; };
+		F24E5EF41B73FFBF00EFC1C3 /* StoryBoardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E5EF11B73FFBF00EFC1C3 /* StoryBoardConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,7 @@
 		F24777771B5AF9EF003B8E3C /* reCreationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reCreationUITests.swift; sourceTree = "<group>"; };
 		F24777791B5AF9EF003B8E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24777861B5AFAAD003B8E3C /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenu.swift; path = ViewModel/MainMenu.swift; sourceTree = "<group>"; };
+		F24E5EF11B73FFBF00EFC1C3 /* StoryBoardConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBoardConstants.swift; path = View/StoryBoardConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		F24777491B5AF9EF003B8E3C = {
 			isa = PBXGroup;
 			children = (
+				F24E5EF01B73FF8800EFC1C3 /* View */,
 				F21FFA871B5BBB0700890ADE /* HTML */,
 				F24777851B5AFA7F003B8E3C /* View Model */,
 				F24777541B5AF9EF003B8E3C /* reCreation */,
@@ -144,6 +149,14 @@
 				F24777861B5AFAAD003B8E3C /* MainMenu.swift */,
 			);
 			name = "View Model";
+			sourceTree = "<group>";
+		};
+		F24E5EF01B73FF8800EFC1C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F24E5EF11B73FFBF00EFC1C3 /* StoryBoardConstants.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24E5EF21B73FFBF00EFC1C3 /* StoryBoardConstants.swift in Sources */,
 				F247775A1B5AF9EF003B8E3C /* DetailViewController.swift in Sources */,
 				F24777581B5AF9EF003B8E3C /* MasterViewController.swift in Sources */,
 				F24777561B5AF9EF003B8E3C /* AppDelegate.swift in Sources */,
@@ -291,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F247776D1B5AF9EF003B8E3C /* reCreationTests.swift in Sources */,
+				F24E5EF31B73FFBF00EFC1C3 /* StoryBoardConstants.swift in Sources */,
 				F24777881B5AFAAD003B8E3C /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24777781B5AF9EF003B8E3C /* reCreationUITests.swift in Sources */,
+				F24E5EF41B73FFBF00EFC1C3 /* StoryBoardConstants.swift in Sources */,
 				F24777891B5AFAAD003B8E3C /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

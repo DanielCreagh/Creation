@@ -19,6 +19,7 @@ class DetailViewController: UIViewController {
     
     if let page = detailItem, url = page.UrlForResource {
       webView.loadRequest(NSURLRequest(URL: url))
+      title = page.rawValue
     }
   }
 }
