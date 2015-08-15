@@ -1,1 +1,0 @@
-web: node www/angular/scripts/web.js $MNS_ENV_APIHOST
