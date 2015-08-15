@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  MainMenuViewController.swift
 //  reCreation
 //
 //  Created by Daniel Creagh on 18/07/2015.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class MainMenuController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
 
@@ -16,6 +16,8 @@ class MasterViewController: UITableViewController {
     super.viewDidLoad()
 
     title = ""
+    
+    tableView.backgroundView = UIImageView(image: UIImage(named: "ricepaper"))
     
     if let split = self.splitViewController {
       let controllers = split.viewControllers
@@ -56,10 +58,16 @@ class MasterViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
+    
+    let cell = tableView.dequeueReusableCellWithIdentifier(cel_MAIN_MENU, forIndexPath: indexPath)
     let menuItem = MainMenuItem.allMenuItems[indexPath.row]
     cell.textLabel!.text = menuItem.rawValue
+    cell.backgroundColor = UIColor.clearColor()
+    let bgColorView = UIView()
+    bgColorView.backgroundColor = clr_MAIN_MENU_SELECT
+    cell.selectedBackgroundView = bgColorView
+    cell.textLabel!.highlightedTextColor = clr_MAIN_MENU_SELECT_TXT
+    
     return cell
   }
 }

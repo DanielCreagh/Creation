@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
   
   override func viewWillAppear(animated: Bool) {
     
+    
     if let page = detailItem, url = page.UrlForResource {
       webView.loadRequest(NSURLRequest(URL: url))
       title = page.rawValue
