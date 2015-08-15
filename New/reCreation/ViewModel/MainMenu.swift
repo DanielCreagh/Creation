@@ -7,7 +7,7 @@ enum MainMenuItem: String {
   case Contact    = "Contact"
   case Personal   = "Personal"
   static let initialMenu = Projects
-  static let allMenuItems = [Projects, Experience, Education, Contact, Personal]
+  static let allMenuItems = [Projects, Experience, Education, Personal, Contact]
   
   var UrlForResource : NSURL? {
     switch self {

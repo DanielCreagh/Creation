@@ -15,9 +15,14 @@ class MasterViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    title = ""
+    
     if let split = self.splitViewController {
       let controllers = split.viewControllers
-      self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+      detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+      if let detailViewControllerUnwrapped = detailViewController {
+        detailViewControllerUnwrapped.detailItem = MainMenuItem.allMenuItems[0]
+      }
     }
   }
 
@@ -29,7 +34,7 @@ class MasterViewController: UITableViewController {
   // MARK: - Segues
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "showDetail" {
+    if segue.identifier == seg_SHOW_DETAIL {
       if let indexPath = self.tableView.indexPathForSelectedRow {
         let menuItemSelected = MainMenuItem.allMenuItems[indexPath.row]
           let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
