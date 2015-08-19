@@ -20,9 +20,6 @@ div#main{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-/*    background-image: url( '../images/PaleBg.png' );*/
-/*    background-repeat: repeat;*/
-/*    background-position: top left;*/
 }
 
 div.wrapper{
@@ -36,10 +33,13 @@ div.contact{
 
 /* --- layout --- */
 div.photo{ 
-    display: block;
-    float: right;
-    width: 29.166667%;
-    margin-left: 4.166667%;
+/*    display: block;*/
+/*    float: right;*/
+/*    width: 29.166667%;*/
+/*    margin-left: 4.166667%;*/
+    width: 95%;
+    margin: 0.5em auto;
+
     outline: black solid thin;
 }
 
@@ -48,7 +48,7 @@ hr{
 }
 
 hr.stubby{
-    width: 75%;
+/*    width: 75%;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,7 +73,7 @@ span.heading a {
 div.subheading.company{
     position: relative;
     margin-top: 0.5em;
-    font-size: 40%;
+    font-size: 75%;
     font-weight: bold;
 }
 

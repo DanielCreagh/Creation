@@ -65,10 +65,10 @@ div.ProjectCategoryImage.otherprojects{
 
 a.projectpanel{
     display: block;
-    float: left;
-    width: 100%;
+/*    float: left;*/
+    width: 95%;
     outline: #003300 solid thin;
-    margin: 1em 0;    
+    margin: 1em auto;
     background-image: url( '../images/ricepaperdark.jpg' );
     background-repeat: repeat;
     background-position: top left;
@@ -76,11 +76,6 @@ a.projectpanel{
     padding: 1em 0;    
     text-decoration: none;  
     color: #003300;
-}
-
-/* to stop object pushing to next line */
-a.projectpanel.right{
-    margin-right: 0;
 }
 
 a.projectpanel div.projectimage {
@@ -187,9 +182,21 @@ a.projectpanel ul li{
 ** =================
 */
 
-@media screen and (min-width: 770px){
+@media screen and (min-width: 700px){
     li.ProjectCategory{
         margin: 2em 4.166667%;
+    }
+    
+    
+    /* to stop object pushing to next line */
+/*    a.projectpanel.right{*/
+/*      margin-right: 0;*/
+/*    }*/
+
+    a.projectpanel{
+/*      display: block;*/
+      float: left;
+      width: 100%;
     }
 }
 
@@ -204,7 +211,7 @@ a.projectpanel ul li{
         width: 20%;
         margin: 2em 2.5%;
     }
-    
+        
     /* === swap these round to make it look snazier on desktop resolutions === */
     /* === essentially because no mouse-over action on iPad === */
     
