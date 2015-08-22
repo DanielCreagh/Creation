@@ -1,13 +1,3 @@
-html {
-    background-color: #f1eeea;
-    background-image: url( '../images/ricepaper.png' );
-    background-repeat: repeat;
-    background-position: top left;
-    font-family: 'Questrial', Verdana, sans-serif; 
-    color: #003300;
-}
-
-
 /* --- HEADER --- */
 div.header {
     overflow: auto;

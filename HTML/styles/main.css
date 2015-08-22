@@ -1,0 +1,30 @@
+html {
+    background-color: #f1eeea;
+    background-image: url( '../images/ricepaper.png' );
+    background-repeat: repeat;
+    background-position: top left;
+    font-family: 'Questrial', Verdana, sans-serif; 
+    color: #003300;
+}
+
+/* Headings */
+
+.heading {
+  font-size: 0.75em;
+}
+
+/* links */
+
+a {
+    color: #003300;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+a img.externalLink {
+    width: 0.375em;
+    height: 0.375em;
+}
+
