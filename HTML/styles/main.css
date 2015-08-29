@@ -28,3 +28,25 @@ a img.externalLink {
     height: 0.375em;
 }
 
+
+/* iphone landscape */
+@media screen and (min-width: 380px), screen and (max-height: 700px){
+
+}
+
+/* iphone 6 plus portrait */
+
+@media screen and (min-width: 400px) {
+
+}
+
+/* iphone 6 plus landscape */
+@media screen and (min-width: 420px) {
+
+}
+
+/* ipad portrait */
+@media screen and (min-width: 700px)and (orientation: portrait){
+
+}
+
