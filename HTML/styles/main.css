@@ -13,6 +13,10 @@ html {
   font-size: 0.75em;
 }
 
+.title {
+  text-align: center;
+}
+
 /* links */
 
 a {
@@ -42,7 +46,9 @@ a img.externalLink {
 
 /* iphone 6 plus landscape */
 @media screen and (min-width: 420px) {
-
+  .title {
+    text-align: left;
+  }
 }
 
 /* ipad portrait */
