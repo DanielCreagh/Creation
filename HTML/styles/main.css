@@ -32,7 +32,6 @@ a img.externalLink {
     height: 0.375em;
 }
 
-
 /* iphone landscape */
 @media screen and (min-width: 380px), screen and (max-height: 700px){
 

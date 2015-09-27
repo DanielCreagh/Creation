@@ -1,74 +1,36 @@
 <!DOCTYPE html> 
 
 <head>
+  
 	<meta charset="utf-8">
-
-  <!--	<meta name="viewport" content="initial-scale=1.0, width=device-width" /> -->
   <meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;'>
 
 	<link rel="stylesheet" type="text/css" href="styles/reset.css" />
 	<link rel="stylesheet" type="text/css" href="styles/main.css" />
 	<link rel="stylesheet" type="text/css" href="styles/cvmain.css" />
+  
+  <script src="scripts/angular.min.js"></script>
+  <script src="scripts/qualData.js"></script>
 
 </head>
 
-<body>
-    <div id="main">
-      <div class="wrapper">
+<body ng-app="qualData" ng-controller="qualDataController as vm">
+  
+  <div id="main">
+    <div class="wrapper">
       <div class="mainblock">
-          <div class="subheading">
-            <span class="heading">Web Applications Engineering</span><span
-              class="experiencedate">June '12</span>
-          </div>
-          <div class="jobblurb">
-            <div class="authority"><a href="http://www.udacity.com/">http://www.udacity.com/</a></div>
-          </div>
-          <div class="subheading title">
-            <span class="heading">TEFL (Teaching English as a Foreign
-              Language)</span><span class="experiencedate">January '12</span>
-          </div>
-          <div class="jobblurb">
-            <div class="authority"><a href="http://www.i-to-i.com/tefl/">http://www.i-to-i.com/tefl/</a></div>
-          </div>
-          <div class="subheading title">
-            <span class="heading">SCRUM Master</span><span
-              class="experiencedate">July '10</span>
-          </div>
-          <div class="jobblurb">
-            <div class="authority"><a href="http://www.scrumalliance.org/">http://www.scrumalliance.org/</a></div>
-          </div>
-          <div class="subheading title">
-            <span class="heading">Software Tester</span><span
-              class="experiencedate">September '06</span>
-          </div>
-          <div class="jobblurb">
-            <div class="authority"><a href="http://www.istqb.org/">http://www.istqb.org/</a></div>
-          </div>
-          <div class="subheading title">
-            <span class="heading">Computer Science BS</span><span
-              class="experiencedate">June '02</span>
-          </div>
-          <h4>The University of Hull</h4>
-          <div class="jobblurb">
-            <p>The computer science department at Hull was of a very high
-            standard. My choice of modules and course material were geared
-            mainly towards Java programming and object oriented software
-            design. The following subjects were also covered:</p>
-          </div>
-          <ul>
-            <li>Java (CORBA) client/server architecture</li>
-            <li>Information Systems</li>
-            <li>C Language</li>
-            <li>Assembler</li>
-            <li>Programming Language Paradigms and their Compilers</li>
-            <li>2D &amp; 3D(OpenGL) Graphics using Java as a platform</li>
-            <li>Artificial Intelligence, Neural Networks and Genetic
-              Algorithms</li>
-          </ul>
+        
+        <div ng-repeat="qual in vm.qualsData">
+          {{qual.name}}
+          <hr>
+          <div class="heading"><a href={{qual.link}}>{{qual.authority}}   <img class="externalLink" src="./images/External.png" alt="External"/></a></div>
+          <div class="experiencedate">{{qual.experienceDate}}</div>
+          <div class="jobblurb">{{qual.description}}</div>
         </div>
       </div>
-      <!--  end of .wrapper -->
-    </div><!--  end of #main -->
+    </div>
+  </div>
+  
 </body>
 
 </html>

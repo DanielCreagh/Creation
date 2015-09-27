@@ -1,5 +1,5 @@
-angular.module('creationApp', [])
-  .controller('creaghController', function($scope) {
+angular.module('projectData', [])
+  .controller('projectDataController', function($scope) {
             
     var vm = this;
     
