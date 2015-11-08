@@ -270,7 +270,8 @@ angular.module('projectData', [])
                  "description": "Misanthropia",
                  "link": "http://soundcloud.com/m1santhrop1a/misanthropia",
                  "details": [
-                             "Electronic music production"
+                             "Electronic music production",
+                             "Live music performance"
                              ]
                  }
                ];

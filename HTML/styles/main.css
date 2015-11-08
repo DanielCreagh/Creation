@@ -17,6 +17,13 @@ html {
   text-align: center;
 }
 
+/* Body */
+
+.wrapper {
+  width: 100%;
+}
+
+
 /* links */
 
 a {
@@ -30,6 +37,13 @@ a:link, a:visited, a:hover, a:active {
 a img.externalLink {
     width: 0.375em;
     height: 0.375em;
+}
+
+/* Projects */
+a.projectpanel ul li{
+  padding-bottom: 0.25em;
+  font-size: 1.25em;
+  list-style-position: inside;
 }
 
 /* iphone landscape */
@@ -52,6 +66,8 @@ a img.externalLink {
 
 /* ipad portrait */
 @media screen and (min-width: 700px)and (orientation: portrait){
-
+  .wrapper {
+    width: 93.75%; /* 1/16 */
+  }
 }
 
