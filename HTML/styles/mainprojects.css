@@ -14,11 +14,7 @@ li.ProjectCategory a {
     width: 100%;
     outline: #003300 solid thin;
 }
-/*
-li.ProjectCategory a:hover {
-    background-color: #0d776b; 
-}
-*/
+
 li.ProjectCategory a:hover div.ProjectCategoryImage img{
     opacity: 1;
 }
@@ -51,7 +47,7 @@ a.projectpanel{
     float: left;
     width: 95%;
     outline: #003300 solid thin;
-    margin: 1em 2.5%;
+    margin: 1em 2.5% 0em 2.5%;
     background-image: url( '../images/ricepaperdark.jpg' );
     background-repeat: repeat;
     background-position: top left;
@@ -71,32 +67,11 @@ a.projectpanel div.projectimage {
     background-repeat: no-repeat;     
 }
 
-
-/*a.projectpanel img{*/
-/*    opacity: 1;*/
-/*}*/
-
-/*a.projectpanel:hover img{*/
-/*    opacity: 0;*/
-/*}*/
-
-a.projectpanel div.projecttitle{
-    margin-left: 6.25%;
-    padding-bottom: 0.5em;
-    text-shadow: 0 1px 0 #D7EEF2;    
-    font-size: 2em;
-}
-
 a.projectpanel ul{
     margin-left: 6.25%;
     list-style: circle;
 }
 
-
-
-/*#location a:hover{*/
-/*    text-decoration: underline;*/
-/*}*/
 
 /* =================
 ** LOWER MIDDLE SIZE 

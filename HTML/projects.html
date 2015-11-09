@@ -17,18 +17,19 @@
 
 <body ng-app="projectData" ng-controller="projectDataController as vm">
   <div id="wrap">
-    <div id="main">
+<!--    <div id="main">-->
       <div class="content wrapper" ng-repeat="(index, project) in vm.projectsData">
         <a class="projectpanel" href={{project.link}} target="_blank" ng-class="{right: index != 0 && (index+1)%2 == 0}">
+          <div class="projectTitleContainer"><div class="projecttitle">{{project.name}}</div></div>
           <div class="projectimage clear" ng-style="{ 'background-image': 'url(' + project.rollOverImage + ')' }">
             <img ng-src={{project.mainImage}} alt={{project.description}}/>
           </div>
-          <div class="projecttitle">{{project.name}}</div>
+
           <ul ng-repeat="detail in project.details">
             <li>{{detail}}</li>
           </ul>
         </a>
-      </div>
+<!--      </div>-->
     </div>
   </div>
   

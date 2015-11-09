@@ -7,8 +7,17 @@ html {
     color: #003300;
 }
 
-/* Headings */
+#main {
+  margin: 0.25em 0 0 0;
+}
 
+div.wrapper{
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
 .heading {
   font-size: 0.75em;
 }
@@ -18,16 +27,14 @@ html {
 }
 
 /* Body */
-
 .wrapper {
   width: 100%;
 }
 
 
 /* links */
-
 a {
-    color: #003300;
+  color: #003300;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -35,14 +42,25 @@ a:link, a:visited, a:hover, a:active {
 }
 
 a img.externalLink {
-    width: 0.375em;
-    height: 0.375em;
+  width: 0.375em;
+  height: 0.375em;
 }
 
 /* Projects */
+.projectTitleContainer {
+  width: 100%;
+  text-align: center;
+}
+
+a.projectpanel div.projecttitle{
+  padding-bottom: 0.5em;
+  text-shadow: 0 1px 0 #D7EEF2;
+  font-size: 1.5em;
+}
+
 a.projectpanel ul li{
   padding-bottom: 0.25em;
-  font-size: 1.25em;
+  font-size: 0.9em;
   list-style-position: inside;
 }
 
@@ -52,9 +70,10 @@ a.projectpanel ul li{
 }
 
 /* iphone 6 plus portrait */
-
 @media screen and (min-width: 400px) {
-
+  a.projectpanel ul li{
+    font-size: 1em;
+  }
 }
 
 /* iphone 6 plus landscape */
@@ -68,6 +87,14 @@ a.projectpanel ul li{
 @media screen and (min-width: 700px)and (orientation: portrait){
   .wrapper {
     width: 93.75%; /* 1/16 */
+  }
+  
+  a.projectpanel div.projecttitle{
+    font-size: 2.25em;
+  }
+  
+  a.projectpanel ul li{
+    font-size: 1.75em;
   }
 }
 
