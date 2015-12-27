@@ -1,13 +1,3 @@
-html {
-    background-color: #f1eeea;
-    background-image: url( '../images/ricepaper.png' );
-    background-repeat: repeat;
-    background-position: top left;
-    font-family: 'Questrial', Verdana, sans-serif; 
-    color: #003300;
-}
-
-
 /* --- HEADER --- */
 div.header {
     overflow: auto;
@@ -172,11 +162,11 @@ div.copyrightnotice {
 */
 
 @media screen and (min-width: 480px){
-    .wrapper {
-        width: 93.75%; /* 1/16 */
-        margin-left: auto;
-        margin-right: auto;
-    }
+/*    .wrapper {*/
+/*        width: 93.75%; /* 1/16 */*/
+/*/*        margin-left: auto;*/*/
+/*/*        margin-right: auto;*/*/
+/*    }*/
 
     /* --- header for middle browser windows --- */
     div.header div.titletext { 
@@ -412,12 +402,4 @@ div.copyrightnotice {
     img.frontpageimage.top {
         margin-top: -1.5em;
     }  
-}
-
-@media screen and (min-width: 960px){
-    .wrapper {
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }

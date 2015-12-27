@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles/utilities.css" />
+	<link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/creaghDraftOne.css" />
+  <link rel="stylesheet" type="text/css" href="styles/mainprojects.css" />
+  
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/projectData.js"></script>
+
+</head>
+
+<body ng-app="projectData" ng-controller="projectDataController as vm">
+  <div id="wrap">
+<!--    <div id="main">-->
+      <div class="content wrapper" ng-repeat="(index, project) in vm.projectsData">
+        <a class="projectpanel" href={{project.link}} target="_blank" ng-class="{right: index != 0 && (index+1)%2 == 0}">
+          <div class="projectTitleContainer"><div class="projecttitle">{{project.name}}</div></div>
+          <div class="projectimage clear" ng-style="{ 'background-image': 'url(' + project.rollOverImage + ')' }">
+            <img ng-src={{project.mainImage}} alt={{project.description}}/>
+          </div>
+
+          <ul ng-repeat="detail in project.details">
+            <li>{{detail}}</li>
+          </ul>
+        </a>
+<!--      </div>-->
+    </div>
+  </div>
+  
+</body>
+
+</html>

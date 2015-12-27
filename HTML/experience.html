@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+
+  <head>
+    <meta charset="utf-8">
+      
+    <meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;'>
+      
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />      
+    <link rel="stylesheet" type="text/css" href="styles/cvmain.css" />
+    
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/professionalData.js"></script>
+
+  </head>
+
+<body ng-app="professionalData" ng-controller="professionalDataController as vm">
+  <div id="main">
+    <div class="wrapper">
+      <div class="mainblock" ng-repeat="experience in vm.professionalData">
+        <div class="title">{{experience.title}}</div>
+        <hr>
+        <div class="heading"><a href={{experience.companyLink}}>{{experience.company}}   <img class="externalLink" src="./images/External.png" alt="External"/></a></div>
+        <div class="experiencedate">{{experience.experienceDate}}</div>
+        <div class="jobblurb">{{experience.description}}</div>
+        <div ng-repeat="list in experience.lists">
+          <h4>{{list.name}}</h4>
+          <ul ng-repeat="item in list.items">
+            <li>{{item}}</li>
+          </ul>
+        </div><!-- list --->
+      </div><!-- mainblock -->
+    </div><!-- wrapper -->
+  </div><!-- main -->
+</body>
+
+</html>
