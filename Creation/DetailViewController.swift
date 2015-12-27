@@ -111,9 +111,9 @@ class DetailViewController: UIViewController, WKNavigationDelegate {
   override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
     
     if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-      print("landscape", appendNewline: false)
+      print("landscape", terminator: "")
     } else {
-      print("portraight", appendNewline: false)
+      print("portraight", terminator: "")
     }
   }
   
