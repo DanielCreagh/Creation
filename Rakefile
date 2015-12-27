@@ -13,8 +13,8 @@ HEADER_STRING_RELEASE_LINE    = "==================\n\n"
 SUB_HEADING_RELEASE           = "Version: "
 SUB_HEADING_RELEASE_LINE      = "------------\n"
 
-PATH_PLIST                    = "./Creation/Info.plist"
-PATH_MANIFEST_XML             = "./Creation/AndroidManifest.xml"
+PATH_PLIST                    = "./App/Info.plist"
+PATH_MANIFEST_XML             = "./App/AndroidManifest.xml"
 
 task :update_feature_notes do
 
