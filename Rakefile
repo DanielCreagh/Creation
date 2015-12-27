@@ -14,26 +14,7 @@ SUB_HEADING_RELEASE           = "Version: "
 SUB_HEADING_RELEASE_LINE      = "------------\n"
 
 PATH_PLIST                    = "./Creation/Info.plist"
-PATH_MANIFEST_XML             = "Boss/app/src/main/AndroidManifest.xml"
-
-IS_DROID = false # false if iOS build
-
-task :test_command do 
-
-  puts "THIS TASK IS BEING EXECUTED"
-
-  if File.file?(PATH_MANIFEST_XML)
-    puts "ANDROID MANIFEST FOUND"    
-    next
-  end 
-
-  if File.file?(PATH_PLIST)
-    puts "iOS PLIST FOUND"    
-    next
-  end 
-
-  puts "neither ios or android components found"
-end
+PATH_MANIFEST_XML             = "./Creation/AndroidManifest.xml"
 
 task :update_feature_notes do
 
@@ -115,11 +96,22 @@ def getLastReleaseVersion
 end
 
 def getBuildVersionNumber 
-  if IS_DROID
+  if File.file?(PATH_MANIFEST_XML)
+    puts "Android version found"
     doc = File.open(PATH_MANIFEST_XML) { |f| Nokogiri::XML(f) }
     return doc.xpath("//manifest").attr("versionCode")
   end
-  %x[/usr/libexec/PlistBuddy -c "Print CFBundleVersion" #{PATH_PLIST}].to_i
+
+  if File.file?(PATH_PLIST)
+    puts "iOS version found"
+    return %x[/usr/libexec/PlistBuddy -c "Print CFBundleVersion" #{PATH_PLIST}].to_i
+  end
+
+  puts "*********************************************************"
+  puts "neither manifest.xml ('Droid) or info.plist (iOS) found"
+  puts "please check PATH_MANIFEST_XML and PATH_MANIFEST_XML variables in Rakefile"
+  puts "*********************************************************"
+  fail "No project found"
 end
 
 def commitAndPushToGit(filename, commitMessage)
