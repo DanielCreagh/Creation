@@ -1,1 +1,11 @@
 language: objective-c
+
+install:
+  - bundle install
+
+before_script:
+  - bundle exec rake:test_command
+
+script: 
+  - xctool -project Creation.xcodeproj -scheme Creation -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -project Creation.xcodeproj -scheme Creation -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
