@@ -19,11 +19,21 @@ div.wrapper{
 
 /* Headings */
 .heading {
-  font-size: 0.75em;
+  font-size: 125%;
 }
 
 .title {
-  text-align: center;
+  font-size: 150%;
+}
+
+.experiencedate {
+  display: block;
+  width:100%;
+  font-style: italic;
+  color: #686868;
+  font-size: 112.5%;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 /* Body */

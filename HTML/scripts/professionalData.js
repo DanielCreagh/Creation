@@ -12,7 +12,7 @@ angular.module('professionalData', [])
                  "description": "Developing enterprise apps and tools for staff members both in-store and at head-office, as part of the Staff Assisted Apps team.",
                  "lists": [
                            {
-                           "name" : "Another Duties and Responsibilites:",
+                           "name" : "Duties and Responsibilites:",
                            "items" : [
                                       "Developing iPad & iPhone Apps using Swift and Objective C",
                                       "Continuous Integration",
@@ -31,7 +31,7 @@ angular.module('professionalData', [])
                    "description": "Working with Mobile App Agency Apptivation, as part of the Lloyds Banking Group team, building iPad and iPhone applications for Lloyds, Bank of Scotland and Halifax brands.",
                    "lists": [
                              {
-                             "name" : "Another Duties and Responsibilites:",
+                             "name" : "Duties and Responsibilites:",
                              "items" : [
                                         "Developing iPad & iPhone Apps using Objective C",
                                         "Working within an Agile agency team",

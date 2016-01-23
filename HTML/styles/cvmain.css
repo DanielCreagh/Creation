@@ -1,15 +1,15 @@
+/* all this to be deleted! */
+
+
 
 div.contact{
     text-align: center;
     font-size: 0.25em;
 }
 
-/* --- layout --- */
+
 div.photo{ 
-/*    display: block;*/
-/*    float: right;*/
-/*    width: 29.166667%;*/
-/*    margin-left: 4.166667%;*/
+
     width: 95%;
     margin: 0.5em auto;
 
@@ -21,7 +21,7 @@ hr{
 }
 
 hr.stubby{
-/*    width: 75%;*/
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -68,18 +68,18 @@ div.subheading a {
     overflow: auto;
 }
 
-.experiencedate {
-    display: block;
-    width:100%;
-    text-align: center;
-    font-style: italic;
-    font-size: 0.75em;        
-}
+/*.experiencedate {*/
+/*    display: block;*/
+/*    width:100%;*/
+/*    text-align: center;*/
+/*    font-style: italic;*/
+/*    font-size: 0.75em;        */
+/*}*/
 
-p, div.jobblurb{
-    margin-bottom: 0.5em;
-    line-height: 1.375;        
-}
+/*p, div.jobblurb{*/
+/*    margin-bottom: 0.5em;*/
+/*    line-height: 1.375;        */
+/*}*/
 
 /* --- text --- */
 h1{
@@ -112,9 +112,9 @@ ul{
     font-size: 30%;
 }
 
-div.jobblurb{
-    font-size: 0.5em;
-}
+/*div.jobblurb{*/
+/*    font-size: 0.5em;*/
+/*}*/
 
 span.notes{
     font-style: italic;
@@ -145,18 +145,10 @@ div.nav a:active {
 
 a {
     overflow: auto;
-/*    display: block; */
 }
 
-/*@media screen and (min-width: 480px){*/
-/**/
-/*}*/
 
 @media screen and (min-width: 610px){
-  
-  html{
-    font-size: 250%;
-  }
   
   h1{
     font-size: 100%;
@@ -169,13 +161,13 @@ a {
         float: left;
     }
 
-    .experiencedate {
-        font-style: italic;
-        font-size: 0.5em;
-        text-align: left;
-        color: #686868;
-    }
-    
+/*    .experiencedate {*/
+/*        font-style: italic;*/
+/*        font-size: 0.5em;*/
+/*        text-align: left;*/
+/*        color: #686868;*/
+/*    }*/
+
     h2 {
         text-align: left;
     }
