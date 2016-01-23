@@ -5,4 +5,4 @@ install:
   - bundle install
 
 script: 
-  - develop_build.sh
+  - ./CI_Scripts/develop_build.sh
