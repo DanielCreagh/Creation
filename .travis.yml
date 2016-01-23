@@ -5,4 +5,4 @@ install:
   - bundle install
 
 script: 
-  - bundle exec rake 
+  - bundle exec Rake test_develop_build
