@@ -9,34 +9,32 @@ angular.module('professionalData', [])
                  "company": "Marks & Spencer",
                  "companyLink": "http://www.marksandspencer.com/",
                  "experienceDate" : "November '14 - Present",
-                 "description": "Working as part of the Lloyds Banking Group team, building iPad and iPhone applications for Lloyds, Bank of Scotland and Halifax brands.",
+                 "description": "Developing enterprise apps and tools for staff members both in-store and at head-office, as part of the Staff Assisted Apps team.",
                  "lists": [
                            {
                            "name" : "Another Duties and Responsibilites:",
                            "items" : [
-                                      "iPad &amp; iPhone App development",
-                                      "Objective C/Xcode",
-                                      "GIT",
-                                      "Agile/SCRUM team",
-                                      "Embedded in client team at their Chiswell Street office"
+                                      "Developing iPad & iPhone Apps using Swift and Objective C",
+                                      "Continuous Integration",
+                                      "Designing and Innovating",
+                                      "Developing Android Applications",
+                                      "Working closely with staff within stores"
                                       ]
                            }
                          ]
                  },
                  {
                    "title": "iOS Developer",
-                   "company": "Apptivation",
-                   "companyLink": "http://www.Apptivation.co.uk",
-                 "experienceDate" : "Jan '14 - November '14",
-                   "description": "Working as part of the Lloyds Banking Group team, building iPad and iPhone applications for Lloyds, Bank of Scotland and Halifax brands.",
+                   "company": "Lloyds Banking Group",
+                   "companyLink": "http://www.lloydsbank.com",
+                 "experienceDate" : "Jan '14 - October '14",
+                   "description": "Working with Mobile App Agency Apptivation, as part of the Lloyds Banking Group team, building iPad and iPhone applications for Lloyds, Bank of Scotland and Halifax brands.",
                    "lists": [
                              {
                              "name" : "Another Duties and Responsibilites:",
                              "items" : [
-                                        "iPad &amp; iPhone App development",
-                                        "Objective C/Xcode",
-                                        "GIT",
-                                        "Agile/SCRUM team",
+                                        "Developing iPad & iPhone Apps using Objective C",
+                                        "Working within an Agile agency team",
                                         "Embedded in client team at their Chiswell Street office"
                                         ]
                              }
@@ -46,13 +44,13 @@ angular.module('professionalData', [])
                      "title": "iOS Developer",
                      "company": "Matter of Form",
                      "companyLink": "http://matterofform.com",
-                 "experienceDate" : "April '13 - Jan '14",
+                 "experienceDate" : "April '13 - Dec '13",
                      "description": "Working as part of the Lloyds Banking Group team, building iPad and iPhone applications for Lloyds, Bank of Scotland and Halifax brands.",
                      "lists": [
                                {
                                "name" : "Duties and Responsibilites:",
                                "items" : [
-                                          "iPad &amp; iPhone App development",
+                                          "iPad & iPhone App development",
                                           "Objective C/Xcode",
                                           "GIT",
                                           "Agile/SCRUM team",
@@ -62,7 +60,7 @@ angular.module('professionalData', [])
                                ]
                            },
                    {
-                   "title": "Mobile App developer & Producer",
+                   "title": "Producer & Mobile App developer",
                    "company": "Apptivata",
                    "companyLink": "http://www.apptivata.com/",
                    "experienceDate" : "September '12 - April '13",
@@ -71,17 +69,18 @@ angular.module('professionalData', [])
                              {
                                "name" : "Duties and Responsibilites:",
                              "items" : [
-                                        "Mobile App development",
-                                        "Project Management, team coordination (Agile &amp; SCRUM)",
-                                        "Communication with clients",
-                                        "Test management",
+                                        "Developing mobile apps for iOS and Android",
+                                        "Managing Projects",
+                                        "Coordinating team using Agile & SCRUM methodologies",
+                                        "Communicating with clients",
+                                        "Managing test process",
                                         "Coordinating submissions to Appstore/Google Play"
                                         ]
                              }
                              ]
                            },
                            {
-                           "title": "Mobile App developer",
+                           "title": "Freelance Design & Development",
                            "company": "Creagh Creations",
                            "companyLink": "http://www.Creagh.com/",
                            "experienceDate" : "September '11 - Jan '14",
@@ -90,12 +89,9 @@ angular.module('professionalData', [])
                                      {
                                      "name" : "Skills and services provided:",
                                      "items" : [
-                                                "iOS apps (Objective C)",
-                                                "HTML5, CSS3 &amp; Javascript",
-                                                "Responsive web design",
-                                                "Web apps (Python)",
-                                                "Photoshop &amp; Flash (AS3)",
-                                                "Project Management &amp; QA"
+                                                "Developing iOS apps using Objective C",
+                                                "Developing web Front End using HTML5, CSS3 & Javascript",
+                                                "Designing responsive web sites using Photoshop & Flash (Action Script)"
                                                 ]
                                      }
                                      ]
@@ -105,13 +101,13 @@ angular.module('professionalData', [])
                            "company": "I-Play",
                            "companyLink": "http://www.iplay.com/",
                            "experienceDate" : "November '08 - April '10",
-                           "description": "Leading a dedicated multidisciplinary game development team of 8 programmers, designers, artists &amp; testers for J2ME supported devices and iPhone. During my time as Internal Producer I completed 4 projects managing 2 teams with project life-cycles lasting between 4 and 6 months:",
+                           "description": "Leading a dedicated multidisciplinary game development team of 8 programmers, designers, artists & testers for J2ME supported devices and iPhone. During my time as Internal Producer I completed 4 projects managing 2 teams with project life-cycles lasting between 4 and 6 months:",
                            "lists": [
                                      {
-                                     "name" : "Projects led:",
+                                     "name" : "Projects:",
                                      "items" : [
-                                                "Bubble Town 2 (J2ME &amp; BREW) - Pocket Gamer Bronze Award",
-                                                "Bubble Town 2 (iPhone) – Also ported to Android",
+                                                "Bubble Town 2 (J2ME & BREW) - Pocket Gamer Bronze Award",
+                                                "Bubble Town 2 (iPhone)",
                                                 "Women's Murder Club: Death in Scarlet (J2ME)",
                                                 "Deal or No Deal: Vegas Gold (J2ME)"
                                                 ]
@@ -119,11 +115,11 @@ angular.module('professionalData', [])
                                      {
                                      "name" : "Day-to-day activity:",
                                      "items" : [
-                                                "Scheduling &amp; project/task estimations - Sprint planning",
+                                                "Scheduling & project/task estimations - Sprint planning",
                                                 "Reviewing Game Designs",
                                                 "Milestone presentations and project status updates to all major stakeholders",
-                                                "External liaisons with Licensors and Sales &amp; Marketing teams",
-                                                "Coordinating art, text, audio &amp; design assets, including marketing materials",
+                                                "External liaisons with Licensors and Sales teams",
+                                                "Coordinating art, text, audio & design assets, including marketing materials",
                                                 "Recruiting, training and mentoring",
                                                 "Coordinating QA - including focus groups"
                                                 ]
@@ -135,7 +131,7 @@ angular.module('professionalData', [])
                            "company": "I-Play",
                            "companyLink": "http://www.iplay.com/",
                            "experienceDate" : "April '07 - November '08",
-                           "description": "Building and developing multiple QA teams who were responsible for the quality of games released for the EU &amp; US markets. The department size varied between 10 and 25 testers under my management. Taking on this role involved relocating from the North of England to Bucharest, Romania.",
+                           "description": "Building and developing multiple QA teams who were responsible for the quality of games released for the EU & US markets. The department size varied between 10 and 25 testers under my management. Taking on this role involved relocating from the North of England to Bucharest, Romania.",
                            "lists": [
                                      {
                                      "name" : "Duties and Responsibilites:",
@@ -162,7 +158,7 @@ angular.module('professionalData', [])
                                                 "Test planning for vast device lists for the European market",
                                                 "Assisting in the recruitment process of both functional and localization testers",
                                                 "Training/coaching team members and managing their time effectively - scheduling",
-                                                "Bug database administration and bug investigations - waiving, vetting &amp; impact assessment",
+                                                "Bug database administration and bug investigations - waiving, vetting & impact assessment",
                                                 "Project configuration management and project status reports - risk analysis"
                                                 ]
                                      }
