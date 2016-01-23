@@ -5,4 +5,4 @@ install:
   - bundle install
 
 script: 
-  - ./CI_Scripts/develop_build.sh
+  - bundle exec rake 
