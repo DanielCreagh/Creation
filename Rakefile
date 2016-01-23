@@ -2,7 +2,7 @@ require 'rubygems'
 require 'nokogiri'
 
 task :test_develop_build do
-  puts "this is the branch: " + $TRAVIS_BRANCH
+  puts "this is the branch: " + ENV['TRAVIS_BRANCH']
 
   if ENV['TRAVIS_BRANCH'] == "develop"
     puts "this is the develop branch"

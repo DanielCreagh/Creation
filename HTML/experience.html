@@ -23,7 +23,7 @@
         <div class="heading"><a href={{experience.companyLink}}>{{experience.company}}   <img class="externalLink" src="./images/External.png" alt="External"/></a></div>
         <div class="experiencedate">{{experience.experienceDate}}</div>
         <div class="jobblurb">{{experience.description}}</div>
-        <div ng-repeat="list in experience.lists">
+        <div class="listBlock" ng-repeat="list in experience.lists">
           <h4>{{list.name}}</h4>
           <ul ng-repeat="item in list.items">
             <li>{{item}}</li>

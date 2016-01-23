@@ -36,11 +36,31 @@ div.wrapper{
   margin-bottom: 0.5em;
 }
 
+h4 {
+  display: block;
+  width:100%;
+
+  color: #686868;
+  font-size: 112.5%;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
 /* Body */
 .wrapper {
   width: 100%;
 }
 
+li {
+  line-height: 1.25;
+  list-style-type: circle;
+  list-style-position:inside;
+  font-size: 90%;
+}
+
+.listBlock {
+  margin-bottom: 1.5em;
+}
 
 /* links */
 a {
