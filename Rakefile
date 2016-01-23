@@ -4,7 +4,7 @@ require 'nokogiri'
 task :test_develop_build do
   puts "this is the branch: " + $TRAVIS_BRANCH
 
-  if $TRAVIS_BRANCH == "develop" do
+  if $TRAVIS_BRANCH == "develop"
     puts "this is the develop branch"
     puts `xctool -project reCreation.xcodeproj -scheme reCreation -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO`
     puts `xctool test -project reCreation.xcodeproj -scheme reCreation -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO`
